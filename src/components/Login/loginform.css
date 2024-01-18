@@ -1,0 +1,12 @@
+
+/* Login page */
+.loginContainer{
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.form-group label {
+    font-size: 16px;
+}
