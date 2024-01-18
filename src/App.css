@@ -3,3 +3,19 @@
   padding: 0;
   text-align: center;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('./assets/fonts/monument-extended.ttf');
+}
+
+@font-face {
+  font-family: 'Monument Extended Ultrabold';
+  src: url('./assets/fonts/monument-extended-ultrabold.ttf');
+}
+
+body{
+  font-family: 'Monument Extended', sans-serif;
+}
+
+/* Inter,sans-serif */
