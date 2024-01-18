@@ -3,9 +3,10 @@
 form{
     font-family: Inter,sans-serif;
 }
+textarea, select, input, button { outline: none; }
 .loginContainer{
     width: 50%;
-    border: 1px solid gray;
+    border: 1px solid #eaeaea;
     border-radius: 16px;
     padding: 16px;
 }
@@ -16,6 +17,12 @@ form{
     padding: 2px;
     font-weight: 700;
 }
+.form-group input {
+    outline: none;
+}
+input:focus, input {
+    outline: none;
+}
 
 #emailHelp{
     font-size: 12px;
@@ -23,7 +30,11 @@ form{
 }
 
 #loginBtn{
-    margin-top: 10px !important;
+    margin-top: 15px !important;
     width: 80%;
     background-color: black !important;
+    font-family: 'Monument Extended', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .12rem;
 }
