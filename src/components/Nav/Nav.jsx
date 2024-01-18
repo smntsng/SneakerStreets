@@ -1,22 +1,24 @@
+import { NavLink } from 'react-router-dom';
+
 const Nav = () => {
     return(
         <>
             <nav>
-                <div className="brandName">
-                <h1>SneakerStreets</h1>
+                <div className="logo">
+                <img src="./assets/images/Logo1.png"></img>
                 </div>
                 <ul>
                 <li>
-                    <a href="_blank">Home</a>
+                    <NavLink to="/" end className="nav-link" > Home </NavLink>
                 </li>
                 <li>
-                    <a href="_blank">Picture</a>
+                    <NavLink to="/trending" end className="nav-link" >Trending</NavLink>
                 </li>
                 <li>
-                    <a href="_blank">Video</a>
+                    <NavLink to="/products" end className="nav-link" > Products </NavLink>
                 </li>
                 <li>
-                    <a href="_blank">About</a>
+                    <NavLink to="/login" end className="nav-link" > Login </NavLink>
                 </li>
                 <li>
                     <a href="_blank">Contact</a>
@@ -26,5 +28,4 @@ const Nav = () => {
         </>
     )
 }
-
 export default Nav;
