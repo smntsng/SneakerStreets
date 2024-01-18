@@ -1,5 +1,8 @@
 
 /* Login page */
+form{
+    font-family: Inter,sans-serif;
+}
 .loginContainer{
     width: 50%;
     border: 1px solid gray;
@@ -8,5 +11,19 @@
 }
 
 .form-group label {
-    font-size: 16px;
+    font-size: 12px;
+    float: left;
+    padding: 2px;
+    font-weight: 700;
+}
+
+#emailHelp{
+    font-size: 12px;
+    display: block;
+}
+
+#loginBtn{
+    margin-top: 10px !important;
+    width: 80%;
+    background-color: black !important;
 }
