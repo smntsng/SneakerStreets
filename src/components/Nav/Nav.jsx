@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom';
+import logo from '../../assets/images/Logo1.png'
 const Nav = () => {
     return(
         <>
             <nav>
-                <div className="brandName">
-                <h1>SneakerStreets</h1>
+                <div className="logo">
+                <img src={logo} style={{height:'100px'}}></img>
                 </div>
                 <ul>
                 <li>
@@ -27,5 +28,4 @@ const Nav = () => {
         </>
     )
 }
-
 export default Nav;
