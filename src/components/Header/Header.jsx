@@ -8,7 +8,7 @@ const Header = () => {
         <>
             <h2>Header</h2>
             <img src={isIcon} ></img>
-            <Nav />
+            {/* <Nav /> */}
         </>
     )
 }
