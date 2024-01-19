@@ -37,3 +37,23 @@
     }
 }
 
+@media (max-width: 1445px) {
+    .imgSlide {
+        height: 600px; 
+    }
+}
+
+@media (max-width: 500px) {
+    .imgSlide {
+        height: 500px; 
+
+    }
+    p {
+        font-size: small;
+    }
+
+    h3{
+        font-size: large;
+    }
+}
+
