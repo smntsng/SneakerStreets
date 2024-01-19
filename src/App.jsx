@@ -7,25 +7,41 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Hero from './components/Hero/Hero'
+import React, { useState, useEffect } from 'react';
+import Preloader from './components/PreLoader/PreLoader';
 
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      setLoading(false);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
-      <Router>
-        <Header />
+      {loading ? (
+        <Preloader />
+      ) : (
+        <Router>
+          <Header />
           <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/home" element={<Home/>} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/signup" element={<Signup/>} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
           <Hero />
-        <Footer />
-      </Router>
+          <Footer />
+        </Router>
+      )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
