@@ -8,7 +8,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Hero from './components/Hero/Hero'
 import React, { useState, useEffect } from 'react';
-import Preloader from './components/PreLoader/PreLoader';
+import PreLoader from './components/PreLoader/PreLoader';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 3000));
       setLoading(false);
     };
 
@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       {loading ? (
-        <Preloader />
+        <PreLoader />
       ) : (
         <Router>
           <Header />

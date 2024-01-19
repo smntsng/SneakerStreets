@@ -5,3 +5,8 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  .preloader img {
+    width: 60%; 
+    height: auto; 
+  }
