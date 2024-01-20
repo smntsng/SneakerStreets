@@ -1,0 +1,47 @@
+.main-footer {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.socials li {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
+
+}
