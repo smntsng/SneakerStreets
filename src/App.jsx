@@ -3,12 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import ProductPage from './components/Product Page/ProductPage'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Productpage from './pages/Productpage';
 import Hero from './components/Hero/Hero'
 import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader';
+
 
 
 function App() {
@@ -35,6 +38,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/productpage" element={<ProductPage />} />
           </Routes>
           <Hero />
           <Footer />
