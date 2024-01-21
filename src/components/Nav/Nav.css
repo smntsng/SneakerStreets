@@ -49,10 +49,19 @@
 
 }
 
+.tab {
+font-size: 15px !important;
+font-weight: bold;
+}
+
 .header-nav-icons {
     display: flex;
     gap: 16px;
     align-items: center;
+}
+
+.header-nav-icons input {
+    margin-right:4px;
 }
 
 .header-nav-icons p {
