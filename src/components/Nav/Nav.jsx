@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
-
+import logo from '../../assets/images/Logo1.png'
 const Nav = () => {
     return(
         <>
             <nav>
                 <div className="logo">
-                <img src="./assets/images/Logo1.png"></img>
+                <img src={logo} style={{height:'100px'}}></img>
                 </div>
                 <ul>
                 <li>
@@ -16,6 +16,9 @@ const Nav = () => {
                 </li>
                 <li>
                     <NavLink to="/products" end className="nav-link" > Products </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/productpage" end className="nav-link" > Products Page </NavLink>
                 </li>
                 <li>
                     <NavLink to="/login" end className="nav-link" > Login </NavLink>
