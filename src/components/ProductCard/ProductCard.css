@@ -1,0 +1,48 @@
+.card-title {
+  text-align: left;
+  font-size: 18px !important;
+  margin-bottom: var(--bs-card-title-spacer-y);
+  color: var(--bs-card-title-color);
+  font-weight: 600;
+}
+
+.card-subtitle{
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 14px !important;
+  text-align: left;
+  padding: 0 !important;
+  margin: 10px 0 !important;
+}
+
+.card-text{
+  text-align: left;
+  font-size: 16px !important;
+  margin: 16px 0;
+}
+
+.custom-select{
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.cartBtn{
+  cursor: pointer;
+  color: white;
+  background-color: #343a40;
+}
+
+.card{
+  max-height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.specialTag{
+  display: inline;
+  position: absolute;
+  padding-top: 5px;
+}
+
+.specialTag img{
+  width: 100px;
+}
