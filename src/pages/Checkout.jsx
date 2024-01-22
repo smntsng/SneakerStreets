@@ -1,4 +1,4 @@
-import Cart from "../components/Checkout/Cart";
+import Cart from "../components/CartSummary/Cart";
 
 const Checkout =()=>{
     return(
