@@ -38,10 +38,11 @@ const Footer = () => {
                             <h3 className= "signup-title">SIGN UP FOR THE SNEAKER STREETS NEWSLETTER</h3>
                             <form className= "signup-form">
                                 <input className= "input" placeholder="Your email address" type= "email" required/>
-                                <button type= "submit" className= "button"> Sign Up</button>
+                                <button type= "submit" className= "button"> Subscribe</button>
                             </form>
                         </div>
                     </section>
+                </div>
                 <div className= "socials">
                     <FontAwesomeIcon icon={faFacebook} />
                     <FontAwesomeIcon icon={faTwitter} />
@@ -49,14 +50,8 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faInstagram} />
 
                 </div>
-                    {/* <h3>Follow Us</h3>
-                    <ul className= "socials">
-                        <li>Meta</li>
-                        <li>Twitter</li>
-                        <li>TikTok</li>
-                        <li>Instagram</li>
-                    </ul> */}
-                </div>
+                    
+        
             </div>
             <div className= "row">
                 <div className= "copyright-section">
