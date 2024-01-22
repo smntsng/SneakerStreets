@@ -42,7 +42,6 @@ const Footer = () => {
                             </form>
                         </div>
                     </section>
-                </div>
                 <div className= "socials">
                     <FontAwesomeIcon icon={faFacebook} />
                     <FontAwesomeIcon icon={faTwitter} />
@@ -51,7 +50,7 @@ const Footer = () => {
 
                 </div>
                     
-        
+                </div>
             </div>
             <div className= "row">
                 <div className= "copyright-section">
