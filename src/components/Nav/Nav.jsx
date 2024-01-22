@@ -4,6 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react"
 import './nav.css'
+import Checkout from '../../pages/Checkout';
 const Nav = () => {
     const [showSearchBar, setshowSearchBar] = useState(false)
     const displaySearchBar = () => {
@@ -54,7 +55,9 @@ const Nav = () => {
                             <FaSearch />
                         </div>
                     )}
+                     <NavLink to="/Checkout" className="nav-link">
                     <FaShoppingCart />
+                    </NavLink>
                 </div>
             </div>
 
