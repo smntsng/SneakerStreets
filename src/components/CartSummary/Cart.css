@@ -1,0 +1,43 @@
+.checkoutButton {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    
+
+  }
+  
+  .checkoutButton:hover {
+    background-color: black; 
+  }
+
+  .summary {
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10% 0 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .atcproducts {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 0px 20% 10px;
+    margin: 5% 50% 0 10%;
+  }
+
+  .atcproducts,h2 {
+    display: flex;
+    justify-content: start;
+  }
+
+  .products{
+    margin: 10% 0 0 0;
+  }
+
