@@ -14,7 +14,7 @@
     background-color: black; 
   }
 
-  .summary {
+  .total {
     border: 1px solid black;
     border-radius: 20px;
     display: flex;
@@ -29,7 +29,8 @@
     border: 1px solid black;
     border-radius: 20px;
     padding: 10px 0px 20% 10px;
-    margin: 5% 50% 0 10%;
+    margin: 5% 0% 0 10%;
+    width: 100%;
   }
 
   .atcproducts,h2 {
@@ -39,5 +40,36 @@
 
   .products{
     margin: 10% 0 0 0;
+  }
+
+  .atcContainer{
+    display: inline-flex;
+    justify-content:center ;
+    width: 100%;
+    
+  }
+
+  .voucher{
+    width: 100%;
+    margin: 5% 10% 0 10%;
+    border-left: 1px solid black;
+    padding: 
+    
+
+  
+  }
+
+  .voucherButton{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+  }
+
+  .voucherButton:hover {
+    background-color: black; 
   }
 

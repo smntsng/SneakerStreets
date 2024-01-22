@@ -7,11 +7,13 @@ const Cart = () => {
         <>
         <h1>Checkout</h1>
 
-        <div className='summary'>
+        <div className='total'>
         <h2>
             Total:
             {/* need to add price logic here */}
         </h2>
+        
+       
 
         <button className="checkoutButton"> CHECKOUT</button>
         </div>
@@ -25,6 +27,11 @@ const Cart = () => {
             products that have been added to Cart
             {/* atc logic */}
         </div>
+        </div>
+        <div className='voucher'>
+          <h3>Promo Code</h3>
+          <input type="text" id="voucherInput" placeholder="Enter code" />
+          <button className="voucherButton">Apply</button>
         </div>
         </div>
         </>
