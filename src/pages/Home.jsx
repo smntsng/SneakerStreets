@@ -1,13 +1,20 @@
 import '../assets/css/style.css';
+import Hero from '../components/Hero/Hero';
 import ProductCard from '../components/ProductCard/ProductCard';
 const Home = () => {
     return(
         <>
-            <h2>Home</h2>
-            <div style={{width: '80%', height:'800px', margin:'0 auto'}}>
+            <div style={{width: '80%', margin:'0 auto', maxWidth:'1400px'}}>
+                <Hero />
                 <h4 className='containerHeading'>New Arrivals</h4>
-                <div className="container">
-                    <div className="row">
+                <div className="container" style={{margin:'0px'}}>
+                    <div className="row" style={{width:'100%', margin: '0px'}}>
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
                         <ProductCard />
                         <ProductCard />
                     </div>

@@ -29,12 +29,17 @@
 .cartBtn{
   cursor: pointer;
   color: white;
+  font-size: 14px;
   background-color: #343a40;
+  padding: 5px 12px;
 }
 
 .card{
+  width: 290px;
+  height: 450px;
   max-height: 500px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px;
 }
 
 .specialTag{

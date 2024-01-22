@@ -56,7 +56,7 @@ const Footer = () => {
                     </ul> */}
                 </div>
             </div>
-            <div className= "row">
+            <div className= "row" style={{width: '40%', margin: '0px auto'}}>
                 <div className= "copyright-section">
                     <p className= "col-sm">
                         Copyright &copy; SneakerStreets

@@ -5,7 +5,7 @@ import hotSale from '../../assets/productImages/hotsale.png'
 const ProductCard = () => {
     return(
         <>
-                <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div className="" style={{display:'contents'}}>
                     <div className="card">
                         <div className='specialTag'>
                             <span><img src={hotSale} /></span>

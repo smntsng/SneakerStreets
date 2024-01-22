@@ -42,7 +42,6 @@ function App() {
             <Route path="/productpage" element={<ProductPage />} />
             <Route path="/Checkout" element={<Checkout />} />
           </Routes>
-          <Hero />
           <Footer />
         </Router>
       )}
