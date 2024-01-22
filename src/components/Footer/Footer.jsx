@@ -27,9 +27,9 @@ const Footer = () => {
                 <div className= "footer-section-contact">
                     <h3>Get in touch</h3>
                     <ul>
-                        <li><FontAwesomeIcon icon={faHouse} />New York, NY 2024, US</li>
-                        <li><FontAwesomeIcon icon={faEnvelope} />sneakerstreets@gmail.com</li>
-                        <li><FontAwesomeIcon icon={faPhone} />+01 453 069 00</li>
+                        <li><FontAwesomeIcon icon={faHouse} /> {""}New York, NY 2024, US</li>
+                        <li><FontAwesomeIcon icon={faEnvelope} /> {""}sneakerstreets@gmail.com</li>
+                        <li><FontAwesomeIcon icon={faPhone} /> {""}+01 453 069 00</li>
                     </ul>
                 </div>
                 <div className= "footer-section-socials">
