@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./productpage.css";
+import SizingChart from "./SizingChart/SizeChart";
 
 const ProductPage = () => {
   const [images, setImages] = useState({
@@ -11,9 +12,11 @@ const ProductPage = () => {
 
   const [activeImg, setActiveImage] = useState(images.img1);
 
+  const [amount, setAmount] = useState(1);
+
   return (
-    <div className="flex flex-col justify-between lg:flex-row rounded-xl p-5">
-      <div className="flex flex-col gap-6">
+    <div className="flex flex-col justify-between lg:flex-row rounded-xl p-5 gap-16 lg:items-center">
+      <div className="flex flex-col gap-6 lg:w-2/3">
         <img
           src={activeImg}
           alt=""
@@ -47,30 +50,43 @@ const ProductPage = () => {
         </div>
       </div>
       {/* {ABOUT} */}
-      <div className="flex flex-col p-5">
+      <div className="flex flex-col gap-6 lg:w-2/3">
         <div>
-          <span className=" text-violet-600 font-medium">
-            {" "}
+          <h2 className=" text-violet-600 font-medium text-start">
             Special Sneakers
-          </span>
-          <h1>Nike Air Max 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-            eligendi facere debitis vitae voluptate sed illo, consequuntur,
-            pariatur minus reiciendis quisquam, quia rem quo porro dolor quaerat
-            sequi numquam? Nobis.
-          </p>
-          <h6 className=" text-2xl font-bold">£129.99</h6>
-          <div>
-            <button className="bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-1xl">
+          </h2>
+          <h1 className="text-start">Nike Air Max 1</h1>
+        </div>
+        <h6 className=" text-2xl font-bold text-start">£129.99</h6>
+
+        <div className="flex flex-row items-center">
+          <>
+            <SizingChart />
+          </>
+        </div>
+        <p className="text-start pr-60">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eligendi
+          facere debitis vitae voluptate sed illo, consequuntur, pariatur minus
+          reiciendis quisquam, quia rem quo porro dolor quaerat sequi numquam?
+          Nobis.
+        </p>
+        <div className="flex flex-row items-center gap-12 mt-5">
+          <div className="flex flex-row items-center">
+            <button
+              className="bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
+              onClick={() => setAmount((prev) => [prev - 1])}
+            >
               -
             </button>
-            <span className="py-4 px-6 rounded-lg">1</span>
-            <button className="bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-1xl">
+            <span className="py-4 px-6 rounded-lg">{amount}</span>
+            <button
+              className="bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
+              onClick={() => setAmount((prev) => [prev + 1])}
+            >
               +
             </button>
           </div>
-          <button className="bg-violet-600 text-white px-4 py-2 rounded-md">
+          <button className="bg-violet-600 text-white py-6 px-16 rounded-xl h-full">
             Add to Cart
           </button>
         </div>
