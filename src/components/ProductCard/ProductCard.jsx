@@ -1,6 +1,7 @@
 import './ProductCard.css'
 import product1 from '../../assets/productImages/sneaker.png'
 import hotSale from '../../assets/productImages/hotsale.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ProductCard = () => {
     return(
@@ -35,7 +36,9 @@ const ProductCard = () => {
                                     <option value="2">42</option>
                                     <option value="3">43</option>
                                 </select>
-                                <a href="#" className="btn cartBtn mt-3"><i className="fas fa-shopping-cart"></i> Add to Cart</a>
+                                <a href="#" className="btn cartBtn mt-3">
+                                    <FontAwesomeIcon icon="fa-regular fa-mug-hot" />
+                                </a>
                             </div>
                         </div>
                     </div>
