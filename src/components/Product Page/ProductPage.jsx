@@ -64,13 +64,13 @@ const ProductPage = () => {
             <SizingChart />
           </>
         </div>
-        <p className="text-start pr-60">
+        <p className="text-start">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eligendi
           facere debitis vitae voluptate sed illo, consequuntur, pariatur minus
           reiciendis quisquam, quia rem quo porro dolor quaerat sequi numquam?
           Nobis.
         </p>
-        <div className="flex flex-row items-center gap-12 mt-5">
+        <div className="flex flex-row items-center gap-12 mt-3">
           <div className="flex flex-row items-center">
             <button
               className="bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
@@ -86,7 +86,7 @@ const ProductPage = () => {
               +
             </button>
           </div>
-          <button className="bg-violet-600 text-white py-6 px-16 rounded-xl h-full">
+          <button className="bg-violet-600 text-white py-4 px-16 rounded-xl h-full">
             Add to Cart
           </button>
         </div>
