@@ -1,34 +1,67 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/Logo1.png'
+import { FaSearch } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
+import { useState } from "react"
+import './nav.css'
+import Checkout from '../../pages/Checkout';
 const Nav = () => {
-    return(
-        <>
-            <nav>
+    const [showSearchBar, setshowSearchBar] = useState(false)
+    const displaySearchBar = () => {
+
+        setshowSearchBar(true);
+    }
+
+    return (
+        <header className="header">
+            <div className="Header-top-row">
+                <p className="tab">Info</p>
+                <p><NavLink to="/login" end className="nav-link tab" >Login</NavLink></p>
+            </div>
+            <div className="header-bottom-row">
                 <div className="logo">
-                <img src={logo} style={{height:'100px'}}></img>
+                    <img src={logo} style={{ height: '200px' }}></img>
                 </div>
-                <ul>
-                <li>
-                    <NavLink to="/" end className="nav-link" > Home </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/trending" end className="nav-link" >Trending</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/products" end className="nav-link" > Products </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/productpage" end className="nav-link" > Products Page </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/login" end className="nav-link" > Login </NavLink>
-                </li>
-                <li>
-                    <a href="_blank">Contact</a>
-                </li>
-                </ul>
-            </nav>
-        </>
+                <nav className="navbar">
+
+                    <ul className="nav-links">
+                        <li>
+                            <NavLink to="/" end className="nav-link" > Home </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/trending" end className="nav-link" >Trending</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/products" end className="nav-link" > Products </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/login" end className="nav-link" > Login </NavLink>
+                        </li>
+                        <li>
+                            <a href="_blank">Contact</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div className="header-nav-icons">
+                    {!showSearchBar ? (
+                        <FaSearch onClick={displaySearchBar} />
+                    ) : (
+                        <div>
+                            <input
+                        type = "text"
+                        placeholder='Search for Item'
+                        ></input>
+                            <FaSearch />
+                        </div>
+                    )}
+                     <NavLink to="/Checkout" className="nav-link">
+                    <FaShoppingCart />
+                    </NavLink>
+                </div>
+            </div>
+
+        </header>
     )
 }
 export default Nav;
