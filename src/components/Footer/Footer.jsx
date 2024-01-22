@@ -5,7 +5,9 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 
 const Footer = () => {
@@ -25,9 +27,9 @@ const Footer = () => {
                 <div className= "footer-section-contact">
                     <h3>Get in touch</h3>
                     <ul>
-                        <li>New York, NY 2024, US</li>
-                        <li>sneakerstreets@gmail.com</li>
-                        <li>+01 453 069 00</li>
+                        <li><FontAwesomeIcon icon={faHouse} />New York, NY 2024, US</li>
+                        <li><FontAwesomeIcon icon={faEnvelope} />sneakerstreets@gmail.com</li>
+                        <li><FontAwesomeIcon icon={faPhone} />+01 453 069 00</li>
                     </ul>
                 </div>
                 <div className= "footer-section-socials">
@@ -71,4 +73,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
