@@ -1,14 +1,11 @@
-// SizingChart.js
-
 import React from "react";
 
 const SizingChart = () => {
   const handleSizeClick = (size) => {
-    // Handle the size click event (e.g., update state, perform actions)
-    console.log(`Size ${size} clicked`);
+      console.log(`Size ${size} clicked`);
   };
 
-  const sizes = ["7", "7.5", "8", "8.5", "9"]; // Add your available sizes
+  const sizes = ["7", "7.5", "8", "8.5", "9"]; 
 
   return (
     <div className="sizing-chart">
