@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import ProductPage from "./components/Product Page/ProductPage";
-import Hero from "./components/Hero/Hero";
-import PreLoader from "./components/PreLoader/PreLoader";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Productpage from "./pages/Productpage";
-import ContactUs from "./pages/Contact";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import ProductPage from './components/Product Page/ProductPage'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+import Productpage from './pages/Productpage';
+import Hero from './components/Hero/Hero'
+import React, { useState, useEffect } from 'react';
+import PreLoader from './components/PreLoader/PreLoader';
+import Checkout from './pages/Checkout';
+
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/productpage" element={<ProductPage />} />
+            <Route path="/Checkout" element={<Checkout />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
           <Hero />
