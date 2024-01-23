@@ -44,6 +44,7 @@ function App() {
             <Route path="/productpage" element={<ProductPage />} />
             <Route path="/Checkout" element={<Checkout />} />
             <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/registration" element={<Registration />} />
           </Routes>
           <Footer />
         </Router>
