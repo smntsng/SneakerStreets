@@ -2,6 +2,7 @@ import './ProductCard.css'
 import product1 from '../../assets/productImages/sneaker.png'
 import hotSale from '../../assets/productImages/hotsale.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
 
 const ProductCard = () => {
     return(
@@ -18,7 +19,9 @@ const ProductCard = () => {
                             </a>
                         </div>
                         <div className="card-body">
-                            <h4 className="card-title">AIR JORDAN 5 TRAINERS</h4>
+                        <Link to="/productpage" end className="nav-link" >
+                        <h4 className="card-title">AIR JORDAN 5 TRAINERS</h4>
+                                </Link>
                             <h6 className="card-subtitle mb-2 text-muted">Style: 4175135836</h6>
                             <div className="options d-flex flex-fill">
                                 <div className="price text-success"><h5 className="mt-4">£125</h5></div>
@@ -36,7 +39,7 @@ const ProductCard = () => {
                                     <option value="2">42</option>
                                     <option value="3">43</option>
                                 </select>
-                                <a href="#" className="btn cartBtn mt-3">
+                                <a href="#" className="btn cartBtn mt-3">Add
                                     <FontAwesomeIcon icon="fa-regular fa-mug-hot" />
                                 </a>
                             </div>
