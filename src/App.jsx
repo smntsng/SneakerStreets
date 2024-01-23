@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Header from './components/Header/Header'
@@ -6,13 +7,13 @@ import Footer from './components/Footer/Footer'
 import ProductPage from './components/Product Page/ProductPage'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import Signup from './pages/Signup'
 import Productpage from './pages/Productpage';
 import Hero from './components/Hero/Hero'
 import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader';
 import Checkout from './pages/Checkout';
 import ContactUs from './components/ContactUs/ContactUs'
+import Registration from './pages/Registration';
 
 
 
@@ -38,11 +39,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />      
             <Route path="/productpage" element={<ProductPage />} />
             <Route path="/Checkout" element={<Checkout />} />
             <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/registration" element={<Registration />} />
           </Routes>
           <Footer />
         </Router>
