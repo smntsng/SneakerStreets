@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 3000));
       setLoading(false);
     };
 
@@ -41,6 +41,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/productpage" element={<ProductPage />} />
             <Route path="/Checkout" element={<Checkout />} />
+            <Route path="/contact" element={<ContactUs />} />
           </Routes>
           <Hero />
           <Footer />
