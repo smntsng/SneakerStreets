@@ -55,9 +55,6 @@ ul li {
   gap: 1rem;
 }
 
-.signup-title {
-  
-}
 
 .input {
   border: solid 0.2rem #808080;
@@ -74,9 +71,11 @@ ul li {
   flex-shrink: 0;
   padding: 0 2rem;
   border-radius: 0.5rem;
-  background-color: rgb(74, 74, 74);
-  color: white;
+  background-color: rgb(175, 172, 172) !important;
+  color: rgb(0, 0, 0);
+  font-size: 1rem !important;
   align-self: stretch;
+  border-color: rgb(74, 74, 74);
 }
 
 .copyright-section p{
