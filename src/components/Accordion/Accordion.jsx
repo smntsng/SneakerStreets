@@ -31,7 +31,7 @@ function AllCollapseExample() {
               placeholder="Write your review..."
             ></textarea>
             <div>
-              <label className="mt-4"><h2>Your Rating?</h2></label>
+              <label className="mt-4 mb-3"><h2>Your Rating?</h2></label>
               <div className="star-rating justify-center">
                 {[...Array(5)].map((star, index) => (
                   <span key={index} className="star">

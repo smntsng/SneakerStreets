@@ -27,20 +27,24 @@ button {
   font-size: 17px !important;
   }
 
-button:hover { 
+.blkButton:hover { 
   background-color: #020202 !important;
   
 }
+
+
 
 /* ================= SIZING TABLE ================ */
 
 .sizing-chart {
   margin-top: 20px;
+  
 }
 
 .size-buttons {
   display: flex;
   gap: 8px;
+  
 }
 
 .size-button {
@@ -48,13 +52,24 @@ button:hover {
   background-color: #fbfbfb;
   border: 1px solid #ddd;
   cursor: pointer;
+  border-radius: 10px;
   
 }
 
 .size-button:hover {
-    color: #eaeaea;
+    color: #ffffff;
+    background-color: #020202;
 }
 
+
+.img {
+  border-radius: 10px;
+}
+
+.upDown:hover {
+  color: #fbfbfb;
+background-color: #000000;
+}
 /* ================= REVIEW STARS ================ */
 .reviewContainer {
   
@@ -82,6 +97,8 @@ button:hover {
   font-size: 30px;
   color: gold;
   padding-right: 4px;
+  margin-top: -25px;
+  margin-bottom: -10px;
 }
 
 .reviewBtn {

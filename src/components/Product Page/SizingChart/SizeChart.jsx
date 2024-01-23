@@ -10,7 +10,7 @@ const SizingChart = () => {
   return (
     <div className="sizing-chart">
       <h3 className="pb-3 text-start">Sizing Chart</h3>
-      <div className="size-buttons">
+      <div className="size-buttons ">
         {sizes.map((size) => (
           <button
             key={size}

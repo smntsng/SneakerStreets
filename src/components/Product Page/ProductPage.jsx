@@ -20,36 +20,36 @@ const ProductPage = () => {
 
   return (
     <div>
-      <div className="flex flex-col justify-between lg:flex-row rounded-xl p-5 gap-16 lg:items-center">
+      <div className="flex flex-col  lg:flex-row rounded-xl p-5 gap-16 lg:items-start">
         <div className="flex flex-col gap-6 lg:w-2/3">
           <img
             src={activeImg}
             alt=""
-            className="w-full h-full aspect-square object-cover"
+            className="img w-full h-full aspect-square object-cover"
           />
           <div className="flex flex-row justify-between h-24">
             <img
               src={images.img1}
               alt=""
-              className="w-24 h-24 rounded-md cursor-pointer "
+              className="w-28 h-28 rounded-md cursor-pointer "
               onClick={() => setActiveImage(images.img1)}
             />
             <img
               src={images.img2}
               alt=""
-              className="w-24 h-24 rounded-md cursor-pointer "
+              className="w-28 h-28 rounded-md cursor-pointer "
               onClick={() => setActiveImage(images.img2)}
             />
             <img
               src={images.img3}
               alt=""
-              className="w-24 h-24 rounded-md cursor-pointer "
+              className="w-28 h-28 rounded-md cursor-pointer "
               onClick={() => setActiveImage(images.img3)}
             />
             <img
               src={images.img4}
               alt=""
-              className="w-24 h-24 rounded-md cursor-pointer "
+              className="w-28 h-28 rounded-md cursor-pointer "
               onClick={() => setActiveImage(images.img4)}
             />
           </div>
@@ -77,20 +77,20 @@ const ProductPage = () => {
           <div className="flex flex-row items-center gap-12 mt-3">
             <div className="flex flex-row items-center">
               <button
-                className="bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
+                className="upDown bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
                 onClick={() => setAmount((prev) => [prev - 1])}
               >
                 -
               </button>
               <span className="py-4 px-6 rounded-lg">{amount}</span>
               <button
-                className="bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
+                className="upDown bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
                 onClick={() => setAmount((prev) => [prev + 1])}
               >
                 +
               </button>
             </div>
-            <button className="bg-violet-600  text-white py-4 px-16 rounded-xl h-full">
+            <button className="blkButton bg-violet-600  text-white py-4 px-16 rounded-xl h-full">
               Add to Cart
             </button>
           </div>
