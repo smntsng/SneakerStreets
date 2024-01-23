@@ -11,14 +11,7 @@ const Home = () => {
                 <h4 className='containerHeading'>New Arrivals</h4>
                 <div className="container" style={{margin:'0px', minWidth:'100%'}}>
                     <div className="row" style={{margin: '0px'}}>
-                        {sneakers.map( sneaker => {
-                            return (
-                                <>
-                                {/* {Product cards ho here} */}
-                                <ProductCard data={sneaker}/>
-                                </>
-                            )
-                        })}
+                        {sneakers.map( (sneaker, index) => <ProductCard key={index} data={sneaker}/> )}
                     </div>
                 </div>
             </div>
