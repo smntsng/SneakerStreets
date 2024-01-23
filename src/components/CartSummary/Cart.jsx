@@ -9,7 +9,7 @@ const Cart = () => {
 
         <div className='total'>
         <h2>
-            Total:
+            Total: price logic
             {/* need to add price logic here */}
         </h2>
         
@@ -24,7 +24,7 @@ const Cart = () => {
         </h2>
 
         <div className='products'>
-            products that have been added to Cart
+            add to cart logic
             {/* atc logic */}
         </div>
         </div>
