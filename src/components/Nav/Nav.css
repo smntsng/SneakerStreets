@@ -26,7 +26,7 @@
 }
 
 .nav-link:hover {
-    color: #ff0000;
+    color: #ff0000a5;
 }
 
 .Header-top-row {
@@ -34,6 +34,7 @@
     justify-content: end;
     gap: 10px;
     border-bottom: 1px solid grey;
+    font-size: small;
 }
 
 .header {
@@ -48,10 +49,19 @@
 
 }
 
+.tab {
+font-size: 15px !important;
+font-weight: bold;
+}
+
 .header-nav-icons {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
+}
+
+.header-nav-icons input {
+    margin-right:4px;
 }
 
 .header-nav-icons p {
