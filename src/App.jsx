@@ -12,6 +12,7 @@ import Hero from './components/Hero/Hero'
 import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader';
 import Checkout from './pages/Checkout';
+import ContactUs from './components/ContactUs/ContactUs'
 
 
 
@@ -20,7 +21,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 3000));
       setLoading(false);
     };
 
@@ -41,6 +42,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/productpage" element={<ProductPage />} />
             <Route path="/Checkout" element={<Checkout />} />
+            <Route path="/contactus" element={<ContactUs />} />
           </Routes>
           <Footer />
         </Router>

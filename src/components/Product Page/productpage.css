@@ -1,20 +1,49 @@
-span {
-  font-size: 20px !important;
-  
-}
-
 h1 {
   font-size: 32px !important;
-  padding: 10px !important;
+  padding-bottom: 1px !important;
 }
 
-h6 { 
+h2 {
+  font-size: 20px !important;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 15px !important;
+  font-weight: 100;
+}
+
+h6 {
   font-size: 32px !important;
-  padding: 10px !important;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p {
-  font-size: 24px !important;
+  font-size: 20px !important;
   font-family: "Poppins", sans-serif;
+}
+
+button { 
+  font-size: 13px !important;
+}
+/* ================= SIZING TABLE ================ */
+
+.sizing-chart {
+  margin-top: 20px;
+}
+
+.size-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.size-button {
+  padding: 8px 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.size-button:hover {
+  background-color: #ddd;
 }

@@ -44,9 +44,39 @@ ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 4rem;
+}
 
+.signup-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.signup-title {
+  
+}
+
+.input {
+  border: solid 0.2rem #808080;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+::placeholder {
+  font-size: 20px;
+}
+
+.button {
+  flex-shrink: 0;
+  padding: 0 2rem;
+  border-radius: 0.5rem;
+  background-color: rgb(74, 74, 74);
+  color: white;
+  align-self: stretch;
 }
 
 .copyright-section p{
