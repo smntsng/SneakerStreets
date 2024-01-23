@@ -29,7 +29,7 @@ const Cart = () => {
         </div>
         </div>
         <div className='voucher'>
-          <h3>Promo Code</h3>
+          <h2>Promo Code</h2>
           <input type="text" id="voucherInput" placeholder="Enter code" />
           <button className="voucherButton">Apply</button>
         </div>
