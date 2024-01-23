@@ -20,7 +20,7 @@ const Nav = () => {
             </div>
             <div className="header-bottom-row">
                 <div className="logo">
-                    <img src={logo} style={{ height: '50px' }}></img>
+                    <img src={logo} style={{ height: '40px' }}></img>
                 </div>
                 <nav className="navbar">
 
