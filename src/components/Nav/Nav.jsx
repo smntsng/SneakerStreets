@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/logoH.png'
+import logo from '../../assets/images/logo3-blackFont.png'
 import { FaSearch } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react"
@@ -50,14 +50,14 @@ const Nav = () => {
                     ) : (
                         <div>
                             <input
-                        type = "text"
-                        placeholder='Search for Item'
-                        ></input>
+                                type="text"
+                                placeholder='Search for Item'
+                            ></input>
                             <FaSearch />
                         </div>
                     )}
                     <NavLink to="/Checkout" className="nav-link">
-                    <FaShoppingCart />
+                        <FaShoppingCart />
                     </NavLink>
                 </div>
             </div>
