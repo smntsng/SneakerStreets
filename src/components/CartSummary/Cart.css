@@ -73,3 +73,41 @@
     background-color: black; 
   }
 
+  @media (max-width: 600px) {
+
+    .total {
+      
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 5% 1% 5% 1%;
+      
+
+}
+
+.atcContainer {
+flex-wrap: wrap;
+justify-content: center;
+}
+
+
+.voucher{
+  border-left: none;
+  margin: 5% 1% 5% 1%;
+  padding: 5px;
+
+}
+
+.atcproducts {
+
+  margin: 5% 1% 5% 1%;
+
+}
+
+.checkoutButton {
+margin: 0% 5% 0% 5%;
+  
+
+}
+
+
+  }
