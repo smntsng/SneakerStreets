@@ -5,6 +5,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react"
 import './nav.css'
 import Checkout from '../../pages/Checkout';
+
 const Nav = () => {
     const [showSearchBar, setshowSearchBar] = useState(false)
     const displaySearchBar = () => {
@@ -38,7 +39,7 @@ const Nav = () => {
                             <NavLink to="/login" end className="nav-link" > Login </NavLink>
                         </li>
                         <li>
-                            <a href="_blank">Contact</a>
+                        <NavLink to="/contactus" end className="nav-link" > Contact us </NavLink>
                         </li>
                     </ul>
 

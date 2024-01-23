@@ -1,6 +1,9 @@
 .main-footer {
   background-color: white;
   color: black;
+  margin-top: 50px;
+  border: 1px solid #d2d2d2;
+  padding-top: 20px;
 }
 
 .container {
@@ -74,4 +77,12 @@ ul li {
   background-color: rgb(74, 74, 74);
   color: white;
   align-self: stretch;
+}
+
+.copyright-section p{
+  font-size: 14px !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
 }
