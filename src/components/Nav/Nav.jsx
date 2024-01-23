@@ -49,14 +49,14 @@ const Nav = () => {
                     ) : (
                         <div>
                             <input
-                        type = "text"
-                        placeholder='Search for Item'
-                        ></input>
+                                type="text"
+                                placeholder='Search for Item'
+                            ></input>
                             <FaSearch />
                         </div>
                     )}
-                     <NavLink to="/Checkout" className="nav-link">
-                    <FaShoppingCart />
+                    <NavLink to="/Checkout" className="nav-link">
+                        <FaShoppingCart />
                     </NavLink>
                 </div>
             </div>
