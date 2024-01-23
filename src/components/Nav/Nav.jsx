@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/Logo1.png'
+import logo from '../../assets/images/logoH.png'
 import { FaSearch } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react"
 import './nav.css'
 import Checkout from '../../pages/Checkout';
+
 const Nav = () => {
     const [showSearchBar, setshowSearchBar] = useState(false)
     const displaySearchBar = () => {
@@ -20,7 +21,7 @@ const Nav = () => {
             </div>
             <div className="header-bottom-row">
                 <div className="logo">
-                    <img src={logo} style={{ height: '200px' }}></img>
+                    <img src={logo} style={{ height: '64px', marginTop:'4px' }}></img>
                 </div>
                 <nav className="navbar">
 
@@ -38,7 +39,7 @@ const Nav = () => {
                             <NavLink to="/login" end className="nav-link" > Login </NavLink>
                         </li>
                         <li>
-                            <a href="_blank">Contact</a>
+                        <NavLink to="/contactus" end className="nav-link" > Contact us </NavLink>
                         </li>
                     </ul>
 
@@ -55,7 +56,7 @@ const Nav = () => {
                             <FaSearch />
                         </div>
                     )}
-                     <NavLink to="/Checkout" className="nav-link">
+                    <NavLink to="/Checkout" className="nav-link">
                     <FaShoppingCart />
                     </NavLink>
                 </div>
