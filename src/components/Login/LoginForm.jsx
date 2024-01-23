@@ -1,5 +1,6 @@
 import Container from "react-bootstrap/Container";
 import './loginform.css'
+import { Link } from "react-router-dom";
 const LoginForm = () => {
     return(
         <>
@@ -20,6 +21,9 @@ const LoginForm = () => {
                             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                         </div>
                         <button type="submit" className="btn btn-primary" id="loginBtn">Login</button>
+                            <div className= "signupAction">
+                                <Link to="/registration"> Don't have an account? Click here to sign up</Link>
+                            </div>
                     </form>
                 </Container>
         </>
