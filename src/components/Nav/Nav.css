@@ -33,12 +33,18 @@
     display: flex;
     justify-content: end;
     gap: 10px;
-    border-bottom: 1px solid grey;
-    font-size: small;
+    border-bottom: 0.5px solid grey;
+     
 }
+
 
 .header {
     margin: 0px 10% 0% 10%;
+    border-radius: 0px 0px 25px 25px;
+    border: 1px solid hsl(80, 7%, 92%);
+    padding: 0px 25px 10px 25px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 
 }
 
@@ -50,8 +56,9 @@
 }
 
 .tab {
-font-size: 15px !important;
+font-size: 12px !important;
 font-weight: bold;
+padding-top: 5px;
 }
 
 .header-nav-icons {
