@@ -13,6 +13,8 @@ import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader';
 import Checkout from './pages/Checkout';
 import ContactUs from './components/ContactUs/ContactUs'
+import Trending from './pages/Trending';
+import News from './components/News/News';
 
 
 
@@ -43,6 +45,7 @@ function App() {
             <Route path="/productpage" element={<ProductPage />} />
             <Route path="/Checkout" element={<Checkout />} />
             <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/trending" element={<News />} />
           </Routes>
           <Footer />
         </Router>
