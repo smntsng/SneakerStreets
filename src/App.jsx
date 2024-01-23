@@ -12,6 +12,7 @@ import Hero from './components/Hero/Hero'
 import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader';
 import Checkout from './pages/Checkout';
+import ContactUs from './components/ContactUs/ContactUs'
 
 
 
@@ -41,9 +42,8 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/productpage" element={<ProductPage />} />
             <Route path="/Checkout" element={<Checkout />} />
-            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/contactus" element={<ContactUs />} />
           </Routes>
-          <Hero />
           <Footer />
         </Router>
       )}
