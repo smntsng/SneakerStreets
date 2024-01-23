@@ -16,9 +16,9 @@ const RegisterForm = () => {
                             <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="exampleInputEmail1">Full Name</label>
-                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <label htmlFor="exampleInputEmail1">Full Name</label> 
+                            <input type="name" 
+                            className="form-control" id="exampleName" aria-describedby="nameHelp" placeholder="Enter full name" />
                         </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Password</label>
