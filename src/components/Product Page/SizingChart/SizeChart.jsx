@@ -5,7 +5,7 @@ const SizingChart = () => {
       console.log(`Size ${size} clicked`);
   };
 
-  const sizes = ["7", "7.5", "8", "8.5", "9"]; 
+  const sizes = ["UK 7", "UK 7.5", "UK 8", "UK 8.5", "UK 9"]; 
 
   return (
     <div className="sizing-chart">
