@@ -35,8 +35,8 @@ const Home = () => {
     }
     useEffect(() => {
         const fetchModal = async () => {
-            await new Promise((resolve) => setTimeout(resolve, 4000));
-            setModalShow(true);
+          await new Promise((resolve) => setTimeout(resolve, 3500));
+          setModalShow(true);
         };
 
         fetchModal();
@@ -54,9 +54,6 @@ const Home = () => {
                 <div className="container" style={{ margin: '0px', minWidth: '100%' }}>
                     <div className="row" style={{ margin: '0px' }}>
                         {sneakers.map((sneaker, index) => <ProductCard key={index} data={sneaker} />)}
-                <div className="container" style={{margin:'0px', minWidth:'100%'}}>
-                    <div className="row" style={{margin: '0px'}}>
-                        {sneakers.map( (sneaker, index) => <ProductCard key={index} data={sneaker}/> )}
                     </div>
                 </div>
             </div>
