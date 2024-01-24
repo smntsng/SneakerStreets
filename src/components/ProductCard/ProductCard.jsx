@@ -3,12 +3,13 @@ import hotSale from '../../assets/productImages/hotsale.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
 
 const ProductCard = props => {
-
     // Object destructuring for props
     const { id, image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag } = props.data;
     let customURL = "/productpage/"+id;
+    const [productid, setProductId] = useState(id)
 
     return(
         <>

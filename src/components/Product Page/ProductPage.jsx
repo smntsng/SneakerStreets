@@ -10,6 +10,10 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const ProductPage = () => {
 
+    React.useEffect(() => {
+      window.scrollTo(0, 0);
+    });
+
     // Get ID from URL
   const params = useParams();
 
