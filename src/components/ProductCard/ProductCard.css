@@ -68,3 +68,10 @@
   font-size: 20px !important;
   font-weight: 600 !important;
 }
+
+.heart{
+  position: absolute;
+    font-size: 22px;
+    right: 10px;
+    top: 3px;
+}
