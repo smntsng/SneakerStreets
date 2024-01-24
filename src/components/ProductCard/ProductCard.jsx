@@ -1,8 +1,8 @@
 import './ProductCard.css'
-import product1 from '../../assets/productImages/sneaker.png'
 import hotSale from '../../assets/productImages/hotsale.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 const ProductCard = props => {
 
@@ -17,7 +17,7 @@ const ProductCard = props => {
                                     <span><img src={hotSale} /></span>
                                 }
                             </div>
-                            <img className="card-img" src={image} alt="Vans" />
+                            <img className="card-img" src={image[0]} alt="Vans" />
                             <div className="d-flex justify-content-end">
                                 <a href="#" className="card-link text-danger like">
                                     <i className="fas fa-heart"></i>
@@ -52,8 +52,8 @@ const ProductCard = props => {
                                             return <option key={index} value={index}>{size}</option>
                                         })}
                                     </select>
-                                    <a href="#" className="btn cartBtn mt-3">Add
-                                        <FontAwesomeIcon icon="fa-regular fa-mug-hot" />
+                                    <a href="#" className="btn cartBtn mt-3">
+                                        <FontAwesomeIcon icon={faCartPlus} />
                                     </a>
                                 </div>
                             </div>
