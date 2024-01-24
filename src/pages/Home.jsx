@@ -33,7 +33,7 @@ const Home = () => {
     }
     useEffect(() => {
         const fetchModal = async () => {
-          await new Promise((resolve) => setTimeout(resolve, 4000));
+          await new Promise((resolve) => setTimeout(resolve, 3500));
           setModalShow(true);
         };
     
