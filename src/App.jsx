@@ -27,7 +27,7 @@ function App() {
       setLoading(false);
     };
 
-    fetchData();
+    fetchData(); 
   }, []);
 
   return (
