@@ -7,7 +7,9 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 const ProductCard = props => {
 
     // Object destructuring for props
-    const { image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag } = props.data;
+    const { id, image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag } = props.data;
+    let customURL = "/productpage/"+id;
+
     return(
         <>
                 <div className="" style={{display:'contents'}}>
@@ -25,7 +27,7 @@ const ProductCard = props => {
                                 </a>
                             </div>
                             <div className="card-body">
-                            <Link to="/productpage" className="nav-link" >  
+                            <Link to={customURL} className="nav-link" >  
                                 <h4 className="card-title">{title}</h4>
                             </Link>
                                 <h6 className="card-brand mb-2 text-muted">{brand}</h6>

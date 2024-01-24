@@ -23,37 +23,43 @@ const ProductPage = () => {
   const [activeImg, setActiveImage] = useState(images.img1);
 
   const [amount, setAmount] = useState(1);
+  let product = sneakers.filter( (data) => {
+      return data.id == params.id;
+    
+  })
+
+  const { image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag } = product[0];
 
   return (
     <div style={{ width: '80%', margin: '0px auto'}}>
       <div className="flex flex-col  lg:flex-row rounded-xl p-5 gap-16 lg:items-start">
         <div className="flex flex-col gap-6 lg:w-2/3">
           <img
-            src={activeImg}
+            src={image[0]}
             alt=""
             className="img w-full h-full aspect-square object-cover"
           />
           <div className="flex flex-row justify-between h-24">
             <img
-              src={images.img1}
+              src={image[1]}
               alt=""
               className="w-28 h-28 rounded-md cursor-pointer "
               onClick={() => setActiveImage(images.img1)}
             />
             <img
-              src={images.img2}
+              src={image[2]}
               alt=""
               className="w-28 h-28 rounded-md cursor-pointer "
               onClick={() => setActiveImage(images.img2)}
             />
             <img
-              src={images.img3}
+              src={image[3]}
               alt=""
               className="w-28 h-28 rounded-md cursor-pointer "
               onClick={() => setActiveImage(images.img3)}
             />
             <img
-              src={images.img4}
+              src={image[4]}
               alt=""
               className="w-28 h-28 rounded-md cursor-pointer "
               onClick={() => setActiveImage(images.img4)}
@@ -65,16 +71,16 @@ const ProductPage = () => {
         <div className="flex flex-col gap-6 lg:w-2/3">
           <div>
             <h2 className=" text-violet-600 font-medium text-start">
-              Special Sneakers {params.id}
+              {brand}
             </h2>
-            <h1 className="text-start">Nike Air Max TW</h1>
+            <h1 className="text-start">{title}</h1>
           </div>
           <div className="star-rating">
             {[...Array(5)].map((star, index) => {
               return <span key={index} className="star">&#9733;</span>;
             })}
           </div>
-          <h6 className=" text-2xl font-bold text-start">£129.99</h6>
+          <h6 className=" text-2xl font-bold text-start">£{price}</h6>
           <div className="flex flex-row items-center">
             <>
               <SizingChart />
@@ -112,7 +118,7 @@ const ProductPage = () => {
             you're ready for the next step, the 5 windows underfoot deliver a
             modern edge to visible Air cushioning. <br />
             <li className="pt-3 pb-2">
-           <strong>Colour Shown: Black/Anthracite/Black/Black</strong> 
+              <strong>Colour Shown: Black/Anthracite/Black/Black</strong> 
             </li>
             <li> <strong>Style: DQ3984-003</strong> </li>
           </p>
