@@ -6,6 +6,7 @@ import ProductCard from '../components/ProductCard/ProductCard';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import {useState, useEffect} from "react";
+import CategoryCard from '../components/CategoryCard/CategoryCard';
 const Home = () => {
     const [modalShow, setModalShow] = useState(false);
     function MyVerticallyCenteredModal(props) {
@@ -52,7 +53,16 @@ const Home = () => {
                         {sneakers.map( (sneaker, index) => <ProductCard key={index} data={sneaker}/> )}
                     </div>
                 </div>
+                <div>
+                    {/* row and 3 columns inside the row - one component with image and tags */}
+                    <CategoryCard category="men"/>
+                    <CategoryCard category="women"/>
+                    <CategoryCard category="kids"/>
+                    
+
+                </div>
             </div>
+            
         </>
     )
 }
