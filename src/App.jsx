@@ -13,6 +13,7 @@ import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader';
 import Checkout from './pages/Checkout';
 import ContactUs from './components/ContactUs/ContactUs'
+import ScrollToTop from "react-scroll-to-top";
 import Registration from './pages/Registration';
 
 
@@ -45,6 +46,7 @@ function App() {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/registration" element={<Registration />} />
           </Routes>
+          <ScrollToTop smooth color="Black" className="scrollBtn" />
           <Footer />
         </Router>
       )}

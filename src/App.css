@@ -9,3 +9,13 @@ body{
 }
 
 /* Inter,sans-serif */
+
+.scrollBtn {
+  display: flex;
+  justify-content: center;
+  padding-top: 7px; 
+}
+
+.discountModal {
+  background-color: red !important;
+}
