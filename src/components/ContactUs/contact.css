@@ -34,6 +34,6 @@ input:focus, input {
   background-color: black !important;
   font-family: 'Monument Extended', sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: .12rem;
 }

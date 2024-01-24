@@ -1,7 +1,6 @@
 h1 {
   font-size: 32px !important;
-  padding-bottom: 1px !important;
-}
+ }
 
 h2 {
   font-size: 20px !important;
@@ -19,31 +18,98 @@ h6 {
 }
 
 p {
-  font-size: 20px !important;
+  font-size: 16px !important;
   font-family: "Poppins", sans-serif;
 }
 
+
 button { 
-  font-size: 13px !important;
+  font-size: 17px !important;
+  }
+
+.blkButton:hover { 
+  background-color: #020202 !important;
+  
 }
+
+
+
 /* ================= SIZING TABLE ================ */
 
 .sizing-chart {
   margin-top: 20px;
+  
 }
 
 .size-buttons {
   display: flex;
   gap: 8px;
+  
 }
 
 .size-button {
-  padding: 8px 12px;
-  background-color: #f2f2f2;
+  padding: 14px 18px;
+  background-color: #fbfbfb;
   border: 1px solid #ddd;
   cursor: pointer;
+  border-radius: 10px;
+  
 }
 
 .size-button:hover {
-  background-color: #ddd;
+    color: #ffffff;
+    background-color: #020202;
 }
+
+
+.img {
+  border-radius: 10px;
+}
+
+.upDown:hover {
+  color: #fbfbfb;
+background-color: #000000;
+}
+/* ================= REVIEW STARS ================ */
+.reviewContainer {
+  
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.form-group label {
+  font-size: 12px;
+  float: left;
+  padding: 2px;
+  font-weight: 700;
+}
+
+.form-group textarea {
+  outline: none;
+}
+
+.star-rating {
+  display: flex;
+}
+
+.star {
+  font-size: 30px;
+  color: gold;
+  padding-right: 4px;
+  margin-top: -25px;
+  margin-bottom: -10px;
+}
+
+.reviewBtn {
+  color: #ddd;
+  font-size: 18px !important;
+  margin-top: 15px !important;
+  width: 80%;
+  background-color: black !important;
+  font-family: 'Monument Extended', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .12rem;
+}
+
