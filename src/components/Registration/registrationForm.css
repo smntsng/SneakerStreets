@@ -1,13 +1,15 @@
-/* Contact Us Page */
+
+/* Registration page */
 form{
   font-family: Inter,sans-serif;
 }
 textarea, select, input, button { outline: none; }
-.loginContainer{
+.registerContainer{
   width: 50%;
   border: 1px solid #eaeaea;
   border-radius: 16px;
   padding: 16px;
+  margin: 100px auto;
 }
 
 .form-group label {
@@ -23,17 +25,17 @@ input:focus, input {
   outline: none;
 }
 
-#emailHelp{
+#nameHelp{
   font-size: 12px;
   display: block;
 }
 
-#loginBtn{
+#registerBtn{
   margin-top: 15px !important;
   width: 80%;
   background-color: black !important;
   font-family: 'Monument Extended', sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: .12rem;
 }
