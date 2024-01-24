@@ -10,8 +10,8 @@ const sneakers =
         image : 'https://cdn.media.amplience.net/i/office/4175135836_sd1.jpg?$highres$&fmt=auto&qlt=default&fmt.jpeg',
         styleCode: '4175135836',
         price: 125.99,
-        sizeOption: ['Green','Blue','Red'],
-        colourOption: [41,42,43],
+        colourOption: ['Green','Blue','Red'],
+        sizeOption: [41,42,43],
         category : categoryOption[0],
         stock: ''
     },
@@ -22,8 +22,8 @@ const sneakers =
         image : 'https://cdn.media.amplience.net/i/office/4552309835_sd1.jpg?$highres$&fmt=auto&qlt=default&fmt.jpeg',
         styleCode: '4552309835',
         price: 230.00,
-        sizeOption: ['Green','Blue','Red'],
-        colourOption: [41,42,43],
+        colourOption: ['Green','Blue','Red'],
+        sizeOption: [41,42,43],
         category : categoryOption[0],
         stock: ''
     }

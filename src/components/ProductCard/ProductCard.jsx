@@ -8,7 +8,6 @@ const ProductCard = props => {
 
     // Object destructuring for props
     const { image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag } = props.data;
-
     return(
         <>
                 <div className="" style={{display:'contents'}}>
@@ -26,7 +25,7 @@ const ProductCard = props => {
                                 </a>
                             </div>
                             <div className="card-body">
-                            <Link to="/productpage" end className="nav-link" >  
+                            <Link to="/productpage" className="nav-link" >  
                                 <h4 className="card-title">{title}</h4>
                             </Link>
                                 <h6 className="card-brand mb-2 text-muted">{brand}</h6>
@@ -42,16 +41,16 @@ const ProductCard = props => {
                                     <select className="custom-select mr-1">
                                         <option defaultValue>Color</option>
                                         {colourOption.map( (color, index) => {
-                                            <option key={index} value={index}>{color}</option>
+                                            return <option key={index} value={index}>{color}</option>
                                         })}
                                         
                                         
                                     </select>
                                     <select className="custom-select ml-1">
                                         <option defaultValue>Size</option>
-                                        <option value="1">41</option>
-                                        <option value="2">42</option>
-                                        <option value="3">43</option>
+                                        {sizeOption.map( (size, index) => {
+                                            return <option key={index} value={index}>{size}</option>
+                                        })}
                                     </select>
                                     <a href="#" className="btn cartBtn mt-3">Add
                                         <FontAwesomeIcon icon="fa-regular fa-mug-hot" />
