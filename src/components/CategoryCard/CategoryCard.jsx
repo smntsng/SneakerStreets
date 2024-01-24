@@ -1,7 +1,15 @@
 const CategoryCard = (props) => {
   return(
       <>
-          <h2>Shop {props.category}</h2>
+      <div className= "card">
+        <div className= "card-body">
+          <img src= {props.img} />
+          <button className= "title">Shop {props.category}</button>
+         
+        </div>
+        
+      </div>
+          
           
       </>
   )
