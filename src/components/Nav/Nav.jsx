@@ -15,10 +15,10 @@ const Nav = () => {
 
     return (
         <header className="header">
-            <div className="Header-top-row">
+            {/* <div className="Header-top-row">
                 <p className="tab">Info</p>
                 <p><NavLink to="/login" end className="nav-link tab" >Login</NavLink></p>
-            </div>
+            </div> */}
             <div className="header-bottom-row">
                 <div className="logo">
                     <img src={logo} style={{ height: '40px' }}></img>

@@ -13,8 +13,7 @@ import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader';
 import Checkout from './pages/Checkout';
 import ContactUs from './components/ContactUs/ContactUs'
-
-
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -44,6 +43,7 @@ function App() {
             <Route path="/Checkout" element={<Checkout />} />
             <Route path="/contactus" element={<ContactUs />} />
           </Routes>
+          <ScrollToTop smooth color="Black" className="scrollBtn" />
           <Footer />
         </Router>
       )}
