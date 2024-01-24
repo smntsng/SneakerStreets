@@ -9,6 +9,7 @@ textarea, select, input, button { outline: none; }
     border: 1px solid #eaeaea;
     border-radius: 16px;
     padding: 16px;
+    margin: 100px auto;
 }
 
 .form-group label {
