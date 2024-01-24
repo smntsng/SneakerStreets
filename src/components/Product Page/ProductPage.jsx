@@ -3,10 +3,16 @@ import "./productpage.css";
 import SizingChart from "./SizingChart/SizeChart";
 import ProductCard from "../ProductCard/ProductCard";
 import Accordion from "../Accordion/Accordion";
+import sneakers from '../../assets/json/sneakers'
+import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const ProductPage = () => {
+
+    // Get ID from URL
+  const params = useParams();
+
   const [images, setImages] = useState({
     img1: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/06b754f8-09d3-4a15-a459-e37e955d6d08/air-max-tw-shoes-VMBzzV.png",
     img2: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87278823-01f6-42ec-9f1e-cd6961842c1f/air-max-tw-shoes-VMBzzV.png",
@@ -19,7 +25,7 @@ const ProductPage = () => {
   const [amount, setAmount] = useState(1);
 
   return (
-    <div>
+    <div style={{ width: '80%', margin: '0px auto'}}>
       <div className="flex flex-col  lg:flex-row rounded-xl p-5 gap-16 lg:items-start">
         <div className="flex flex-col gap-6 lg:w-2/3">
           <img
@@ -59,7 +65,7 @@ const ProductPage = () => {
         <div className="flex flex-col gap-6 lg:w-2/3">
           <div>
             <h2 className=" text-violet-600 font-medium text-start">
-              Special Sneakers
+              Special Sneakers {params.id}
             </h2>
             <h1 className="text-start">Nike Air Max TW</h1>
           </div>
@@ -124,10 +130,7 @@ const ProductPage = () => {
             <h4 className="containerHeading text-start pb-3">More to Love</h4>
             <div className="container justify-start">
               <div className="row">
-                {/* <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard /> */}
+                {sneakers.map( (sneaker, index) => <ProductCard key={index} data={sneaker}/> )}
               </div>
             </div>
           </>

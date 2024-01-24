@@ -4,6 +4,7 @@ const specialTags = [null, 'hotSale','Trending']
 const sneakers = 
 [
     {
+        id: 1,
         specialTag: specialTags[1],
         brand: 'Jordan',
         title: 'AIR JORDAN 5 TRAINERS',
@@ -20,6 +21,7 @@ const sneakers =
         'https://cdn.media.amplience.net/i/office/4175135836_pr1.jpg?$highres$&w=1068&h=934&fmt=auto&qlt=default&fmt.jpeg'],
     },
     {
+        id: 2,
         specialTag: specialTags[0],
         brand: 'Adidas Y-3',
         title: 'Y-3 Runner 4D Halo',
@@ -37,6 +39,7 @@ const sneakers =
     },
     // Additional cards (remove in future)
     {
+        id: 3,
         specialTag: specialTags[0],
         brand: 'Nike',
         title: 'ACG MOUNTAIN FLY 2 LOW',
@@ -53,6 +56,7 @@ const sneakers =
         'https://cdn.media.amplience.net/i/office/4915525390_pr1.jpg?$highres$&w=1068&h=934&fmt=auto&qlt=default&fmt.jpeg'],
     },
     {
+        id: 4,
         specialTag: specialTags[0],
         brand: 'Nike',
         title: 'AIR MAX 90 GORE-TEX',
@@ -69,6 +73,7 @@ const sneakers =
         'https://cdn.media.amplience.net/i/office/4143117983_pr1.jpg?$highres$&w=1068&h=934&fmt=auto&qlt=default&fmt.jpeg'],
     },
     {
+        id: 5,
         specialTag: specialTags[0],
         brand: 'SALOMON',
         title: 'XT-6 TRAINERS',
