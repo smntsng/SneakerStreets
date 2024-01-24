@@ -3,6 +3,7 @@ import hotSale from '../../assets/productImages/hotsale.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 
 const ProductCard = props => {
@@ -21,9 +22,10 @@ const ProductCard = props => {
                                 }
                             </div>
                             <img className="card-img" src={image[0]} alt="Vans" />
-                            <div className="d-flex justify-content-end">
+                            <div className="d-flex justify-content-end heart">
                                 <a href="#" className="card-link text-danger like">
                                     <i className="fas fa-heart"></i>
+                                    <FontAwesomeIcon icon={faHeart} />
                                     {/* Heart Icon  */}
                                 </a>
                             </div>
