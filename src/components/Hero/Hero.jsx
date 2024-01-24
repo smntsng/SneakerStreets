@@ -66,6 +66,84 @@ const Hero = () => {
         </Carousel.Caption>
         </div>
       </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block imgSlide "
+          src="src/assets/images/2.png"
+          alt="Fifth slide"
+        />
+        <div className="carouselCTA">
+        <Carousel.Caption>
+         
+          <button className="carousel-button">SHOP NOW</button>
+        </Carousel.Caption>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block imgSlide "
+          src="src/assets/images/3.png"
+          alt="Sixth slide"
+        />
+        <div className="carouselCTA">
+        <Carousel.Caption>
+         
+          <button className="carousel-button">SHOP NOW</button>
+        </Carousel.Caption>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block imgSlide "
+          src="src/assets/images/4.png"
+          alt="Seventh slide"
+        />
+        <div className="carouselCTA">
+        <Carousel.Caption>
+         
+          <button className="carousel-button">SHOP NOW</button>
+        </Carousel.Caption>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block imgSlide "
+          src="src/assets/images/5.png"
+          alt="Eighth slide"
+        />
+        <div className="carouselCTA">
+        <Carousel.Caption>
+         
+          <button className="carousel-button">SHOP NOW</button>
+        </Carousel.Caption>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block imgSlide "
+          src="src/assets/images/6.png"
+          alt="Eighth slide"
+        />
+        <div className="carouselCTA">
+        <Carousel.Caption>
+         
+          <button className="carousel-button">SHOP NOW</button>
+        </Carousel.Caption>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block imgSlide "
+          src="src/assets/images/7.png"
+          alt="Ninth slide"
+        />
+        <div className="carouselCTA">
+        <Carousel.Caption>
+         
+          <button className="carousel-button">SHOP NOW</button>
+        </Carousel.Caption>
+        </div>
+      </Carousel.Item>
     </Carousel>
     </div>
   );
