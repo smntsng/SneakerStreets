@@ -4,25 +4,15 @@
   margin-bottom: var(--bs-card-title-spacer-y);
   color: var(--bs-card-title-color);
   font-weight: 600;
-  min-height: 50px;
-}
-
-.card-brand{
-  font-weight: 600;
-  line-height: 1.2;
-  font-size: 14px !important;
-  text-align: left;
-  padding: 0 !important;
-  margin: 0px !important;
 }
 
 .card-subtitle{
   font-weight: 500;
   line-height: 1.2;
-  font-size: 12px !important;
+  font-size: 14px !important;
   text-align: left;
   padding: 0 !important;
-  margin: 3px 0 !important;
+  margin: 10px 0 !important;
 }
 
 .card-text{
