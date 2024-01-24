@@ -7,6 +7,7 @@ import sneakers from '../../assets/json/sneakers'
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import ColourChart from "./ColourChart/ColourChart";
 
 const ProductPage = () => {
   // Get ID from URL
@@ -82,9 +83,10 @@ const ProductPage = () => {
           </div>
           <h6 className=" text-2xl font-bold text-start">£{price}</h6>
           <div className="flex flex-row items-center">
-            <>
-              <SizingChart />
-            </>
+              <SizingChart size={sizeOption}/>
+          </div>
+          <div className="flex flex-row items-center">
+              <ColourChart color={colourOption} />
           </div>
           <div className="flex flex-row items-center gap-12 mt-3">
             <div className="flex flex-row items-center">
@@ -118,9 +120,9 @@ const ProductPage = () => {
             you're ready for the next step, the 5 windows underfoot deliver a
             modern edge to visible Air cushioning. <br />
             <li className="pt-3 pb-2">
-              <strong>Colour Shown: Black/Anthracite/Black/Black</strong> 
+              <strong>Colour Shown: {colourOption[0]} </strong> 
             </li>
-            <li> <strong>Style: DQ3984-003</strong> </li>
+            <li> <strong>Style: {styleCode}</strong> </li>
           </p>
           <>
             <Accordion />
