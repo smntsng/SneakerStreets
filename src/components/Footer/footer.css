@@ -79,19 +79,21 @@ cursor: pointer;
   font-size: 16px;
 }
 
-.button {
+.footer-button {
   flex-shrink: 0;
   padding: 0 2rem;
   border-radius: 0.5rem;
-  background-color: rgb(175, 172, 172);
+  background-color: rgb(175, 172, 172) !important;
   color: rgb(255, 255, 255);
   font-size: 1rem !important;
   align-self: stretch;
   border-color: rgb(74, 74, 74);
+  height: 62px;
+
 }
 
-.button:hover {
-  background-color: #593598;
+.footer-button:hover {
+  background-color: #593598 !important;
 }
 
 .copyright-section p{

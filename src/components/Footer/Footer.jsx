@@ -38,7 +38,7 @@ const Footer = () => {
                             <h3 className= "signup-title">SIGN UP FOR THE SNEAKER STREETS NEWSLETTER</h3>
                             <form className= "signup-form ">
                                 <input className= "input" placeholder="Your email address" type= "email" required/>
-                                <button type= "submit" className= "button bg-violet-600">Subscribe</button>
+                                <button type= "submit" className= "footer-button">Subscribe</button>
                             </form>
                         </div>
                     </section>
