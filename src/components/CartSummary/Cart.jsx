@@ -5,7 +5,7 @@ import './Cart.css';
 const Cart = () => {
     return(
         <>
-        <h1>Checkout</h1>
+        <h1 className='checkout'>Checkout</h1>
 
         <div className='total'>
         <h2>
@@ -30,8 +30,8 @@ const Cart = () => {
         </div>
         <div className='voucher'>
           <h2>Promo Code</h2>
-          <input type="text" id="voucherInput" placeholder="Enter code" />
-          <button className="voucherButton">Apply</button>
+          <input className='input' type="text" id="voucherInput" placeholder="Enter code" />
+          <button className="voucherButton">APPLY</button>
         </div>
         </div>
         </>
