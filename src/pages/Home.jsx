@@ -54,7 +54,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div>
-                    <h3 className= "categories-header">Categories</h3>
+                    <h3 className= "categories-header">CATEGORIES</h3>
                 </div>
                 <div className= "wrapper">
                     {/* row and 3 columns inside the row - one component with image and tags */}
