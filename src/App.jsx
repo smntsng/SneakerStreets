@@ -48,8 +48,9 @@ function App() {
             <Route path="/Checkout" element={<Checkout />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/registration" element={<Registration />} />
-            <Route path="/trending" element={<News />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/trending" element={ <Trending /> } />
+            <Route path="/products" element={<Registration />} />
           </Routes>
           <ScrollToTop smooth color="Black" className="scrollBtn" />
           <Footer />

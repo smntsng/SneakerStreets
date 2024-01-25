@@ -25,7 +25,9 @@
   height: 300px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+  
 }
+
 
 .Newscontent,
 .highlighted-article .Newscontent {
@@ -34,32 +36,43 @@
 }
 
 .title {
-  font-size: 18px;
-  margin-bottom: 10px;
+  text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .description {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  text-align: left;
+  margin-bottom: var(--bs-card-title-spacer-y);
+  font-weight:500;
+  min-height: 100px;
+
 }
 
 .link {
-  display: block;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.link button {
-  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
   color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
-  border: none;
-  cursor: pointer;
   border-radius: 30px;
   font-weight: bolder;
 }
 
+/* Optional: Add hover effect */
+.link:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 h2 {
-  text-align: center;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: var(--bs-card-title-spacer-y);
+  font-weight: bolder;
+  min-height: 50px;
+
 }
 
 .highlighted-article {
@@ -68,7 +81,7 @@ h2 {
   justify-content: center;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  
+  margin: 2% 0 2% 0 ;
   width: 100%;
 }
 
@@ -77,4 +90,54 @@ h2 {
   height: 700px;
   object-fit: cover;
   
+}
+
+.blog-header{
+
+  margin: 4% 0% 2% 0%;
+
+
+}
+
+.header-image {
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+  display: block; 
+  max-width: 100%; 
+}
+
+.intro{
+  margin: 0% 20% 2% 20%;
+  font-weight: bolder;
+}
+.source{
+  font-size: 10px;
+  font-weight: bolder;
+  color: grey;
+  margin: 0 0 1% 0;
+  align-items: flex-start;
+}
+
+
+
+@media (max-width: 767px) {
+  .NewsCard,
+  .highlighted-article {
+    width: 100%; 
+  }
+
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 5% 0% 5%;
+  }
+
+  .intro{
+    margin: 0% 5% 0% 5%;
+  }
+
+
 }
