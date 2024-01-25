@@ -8,6 +8,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -17,9 +18,9 @@ const Footer = () => {
                 <div className= "footer-section-menu text-start">
                     <h3><strong>Menu</strong></h3>
                     <ul>
-                        <li><a href="#" >About Us</a></li>
-                        <li><a href="#">Products</a> </li>
-                        <li><a href="#">Orders</a></li>
+                        
+                        <li><Link to= "/Products">Products</Link></li>
+                        <li><Link to= "/Popular">Popular</Link></li>
                         <li><a href="#">Shipping Info</a></li>
                         <li><a href="#">FAQs</a></li>
                     </ul>
