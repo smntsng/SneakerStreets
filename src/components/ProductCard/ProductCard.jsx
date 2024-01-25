@@ -3,26 +3,35 @@ import hotSale from '../../assets/productImages/hotsale.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faFireFlameCurved } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
 
 const ProductCard = props => {
-
     // Object destructuring for props
-    const { id, image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag } = props.data;
+    const { id, image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag, popularity } = props.data;
     let customURL = "/productpage/"+id;
+    const [productid, setProductId] = useState(id)
 
     return(
         <>
                 <div className="" style={{display:'contents'}}>
                         <div className="card">
                             <div className='specialTag'>
-                                {specialTag && 
+                                { !props.popularity &&
+                                specialTag && 
                                     <span><img src={hotSale} /></span>
                                 }
+                                {
+                                    props.popularity &&
+                                    <span style={{padding: '15px'}}> <FontAwesomeIcon icon={faFireFlameCurved} /> {popularity} </span>
+                                }
+
                             </div>
                             <img className="card-img" src={image[0]} alt="Vans" />
-                            <div className="d-flex justify-content-end">
-                                <a href="#" className="card-link text-danger like">
+                            <div className="d-flex justify-content-end heart">
+                                <a href="#" className="card-link like">
                                     <i className="fas fa-heart"></i>
+                                    <FontAwesomeIcon icon={faHeart} />
                                     {/* Heart Icon  */}
                                 </a>
                             </div>

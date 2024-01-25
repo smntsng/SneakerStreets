@@ -14,14 +14,14 @@ const Nav = () => {
     }
 
     return (
-        <header className="header">
+        <header className="header " style={{ width: '88.5%', margin: '0 auto', maxWidth: '1400px' }}>
             {/* <div className="Header-top-row">
                 <p className="tab">Info</p>
                 <p><NavLink to="/login" end className="nav-link tab" >Login</NavLink></p>
             </div> */}
             <div className="header-bottom-row">
-                <div className="logo">
-                    <img src={logo} style={{ height: '40px' }}></img>
+                <div className="logo mt-2">
+                    <a href="/"><img src={logo} style={{ height: '40px' }}></img></a>
                 </div>
                 <nav className="navbar">
 
@@ -30,7 +30,7 @@ const Nav = () => {
                             <NavLink to="/" end className="nav-link" > Home </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/trending" end className="nav-link" >Trending</NavLink>
+                            <NavLink to="/popular" end className="nav-link" > Popular </NavLink>
                         </li>
                         <li>
                             <NavLink to="/products" end className="nav-link" > Products </NavLink>
@@ -40,6 +40,9 @@ const Nav = () => {
                         </li>
                         <li>
                         <NavLink to="/contactus" end className="nav-link" > Contact us </NavLink>
+                        </li>
+                        <li>
+                        <NavLink to="/blog" end className="nav-link" > Blog </NavLink>
                         </li>
                     </ul>
 

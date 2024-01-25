@@ -8,7 +8,7 @@ const LoginForm = () => {
                     <p style = {{   fontFamily: 'Monument Extended,sans-serif',
                                 textTransform: 'uppercase',
                                 fontSize: '1.4rem',
-                                letterSpacing: '.1rem'}}>Login
+                                letterSpacing: '.1rem'}}> <h1 className="mt-4">Login</h1>
                     </p>
                     <form>
                         <div className="form-group">
@@ -21,8 +21,8 @@ const LoginForm = () => {
                             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                         </div>
                         <button type="submit" className="btn btn-primary" id="loginBtn">Login</button>
-                            <div className= "signupAction">
-                                <Link to="/registration"> Don't have an account? Click here to sign up</Link>
+                            <div className= "signupAction m-3">
+                                <Link to="/registration"> Don't have an account? <strong className=" text-violet-700">Click here to sign up</strong></Link>
                             </div>
                     </form>
                 </Container>

@@ -1,11 +1,11 @@
 import React from "react";
 
-const SizingChart = () => {
+const SizingChart = (props) => {
   const handleSizeClick = (size) => {
       console.log(`Size ${size} clicked`);
   };
 
-  const sizes = ["UK 7", "UK 7.5", "UK 8", "UK 8.5", "UK 9"]; 
+  const sizes = props.size; 
 
   return (
     <div className="sizing-chart">
