@@ -8,7 +8,7 @@ const RegisterForm = () => {
                     <p style = {{   fontFamily: 'Monument Extended,sans-serif',
                                 textTransform: 'uppercase',
                                 fontSize: '1.4rem',
-                                letterSpacing: '.1rem'}}>Register
+                                letterSpacing: '.1rem'}}> <h1 className="mt-4">Register</h1>                                
                     </p>
                     <form>
                     <div className="form-group">
@@ -26,10 +26,10 @@ const RegisterForm = () => {
                             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                         </div>
                         <button type="submit" className="btn btn-primary" id="registerBtn">Register</button>
-                          <div className= "loginAction">
-                                <Link to="/login"> Already a member? Click here to sign in! </Link>
+                          <div className= "loginAction m-3">
+                                <Link to="/login"> Already a member? <strong className="clickHere text-violet-700">Click here to sign in!</strong></Link>
                           </div>
-                    </form>
+                    </form> 
                 </Container>
         </>
     )

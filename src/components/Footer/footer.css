@@ -1,10 +1,10 @@
 .main-footer {
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   color: black;
   margin-top: 50px;
-  border: 1px solid #d2d2d2;
-  padding-top: 20px;
-}
+  border-top: 1.5px solid #d2d2d2;
+  padding-top: 30px;
+ }
 
 .container {
   display: flex;
@@ -20,11 +20,18 @@ ul {
   list-style: none;
   padding: 0;
 }
-
-ul li {
-  margin-bottom: 10px;
+li:hover {
+  color: #700CB3 ;
 }
 
+ul li {
+  margin-bottom: 12px;
+  margin-right: 20px;
+}
+.icon {
+  column-rule-color: blue;
+
+}
 .socials {
   display: flex;
   flex-direction: column;
@@ -48,6 +55,11 @@ ul li {
   padding-top: 4rem;
 }
 
+.socialIcon:hover {
+color: #593598;
+cursor: pointer;
+}
+
 .signup-form {
   display: flex;
   align-items: center;
@@ -64,18 +76,22 @@ ul li {
 }
 
 ::placeholder {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .button {
   flex-shrink: 0;
   padding: 0 2rem;
   border-radius: 0.5rem;
-  background-color: rgb(175, 172, 172) !important;
-  color: rgb(0, 0, 0);
+  background-color: rgb(175, 172, 172);
+  color: rgb(255, 255, 255);
   font-size: 1rem !important;
   align-self: stretch;
   border-color: rgb(74, 74, 74);
+}
+
+.button:hover {
+  background-color: #593598;
 }
 
 .copyright-section p{

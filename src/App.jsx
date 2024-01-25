@@ -17,6 +17,8 @@ import ScrollToTop from "react-scroll-to-top";
 import Registration from './pages/Registration';
 import Popular from './pages/Popular';
 import Products from './pages/Products';
+import News from './components/News/News';
+import Blog from './pages/Blog';
 
 
 
@@ -47,7 +49,7 @@ function App() {
             <Route path="/Checkout" element={<Checkout />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/registration" element={<Registration />} />
-            {/*  */}
+            <Route path="/blog" element={<Blog />} />
             <Route path="/popular" element={ <Popular /> } />
             <Route path="/products" element={<Products />} />
           </Routes>
