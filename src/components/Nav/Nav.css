@@ -31,10 +31,10 @@
 
 .Header-top-row {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 10px;
     border-bottom: 0.5px solid grey;
-     
+
 }
 
 

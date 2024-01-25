@@ -15,7 +15,8 @@ import Checkout from './pages/Checkout';
 import ContactUs from './components/ContactUs/ContactUs'
 import ScrollToTop from "react-scroll-to-top";
 import Registration from './pages/Registration';
-import Trending from './pages/Trending';
+import Popular from './pages/Popular';
+import Products from './pages/Products';
 import News from './components/News/News';
 import Blog from './pages/Blog';
 
@@ -49,8 +50,8 @@ function App() {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/trending" element={ <Trending /> } />
-            <Route path="/products" element={<Registration />} />
+            <Route path="/popular" element={ <Popular /> } />
+            <Route path="/products" element={<Products />} />
           </Routes>
           <ScrollToTop smooth color="Black" className="scrollBtn" />
           <Footer />
