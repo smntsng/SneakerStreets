@@ -28,7 +28,7 @@ button {
   }
 
 .blkButton:hover { 
-  background-color: #020202 !important;
+  background-color: #593598 !important;
   
 }
 
@@ -58,7 +58,7 @@ button {
 
 .size-button:hover {
     color: #ffffff;
-    background-color: #020202;
+    background-color: #593598;
 }
 
 
@@ -68,7 +68,7 @@ button {
 
 .upDown:hover {
   color: #fbfbfb;
-background-color: #000000;
+background-color: #593598;
 }
 /* ================= REVIEW STARS ================ */
 .reviewContainer {
