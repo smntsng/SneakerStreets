@@ -1,12 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo3-blackFont.png';
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
+import { FaUser, FaShoppingCart } from "react-icons/fa";
 import { useState } from "react";
 import './nav.css';
 import Checkout from '../../pages/Checkout';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+
 
 const Navigation = () => {
     const [showSearchBar, setshowSearchBar] = useState(false);
@@ -39,17 +40,10 @@ const Navigation = () => {
                         </Nav>
                     </Navbar.Collapse>
                     <div className="header-nav-icons">
-                        {!showSearchBar ? (
-                            <FaSearch onClick={displaySearchBar} />
-                        ) : (
-                            <div>
-                                <input
-                                    type="text"
-                                    placeholder='Search for Item'
-                                ></input>
-                                <FaSearch />
-                            </div>
-                        )}
+                    <NavLink to="/login" className="nav-link">
+                            <FaUser />
+                        </NavLink>
+
                         <NavLink to="/Checkout" className="nav-link">
                             <FaShoppingCart />
                         </NavLink>
