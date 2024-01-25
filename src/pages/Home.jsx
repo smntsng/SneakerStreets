@@ -21,14 +21,14 @@ const Home = () => {
                 centered
             >
                 <Modal.Body>
-                    <img src="src\assets\images\PromoModal.png"></img>
-                <div className="modal-header">
-                    <div className="close-button">
-                        <Button onClick={props.onHide} className="close-button">
-                            <FaTimes size={10} />
-                        </Button>
+                    <div className="modal-header" style={{position: 'absolute', right: '0px', backgroundColor:'transparent'}}>
+                        <div className="close-button">
+                            <Button onClick={props.onHide} className="close-button" style={{padding: '10px'}}>
+                                <FaTimes size={12} />
+                            </Button>
+                        </div>
                     </div>
-                </div>
+                    <img src="src\assets\images\PromoModal.png"></img>
                 </Modal.Body>
             </Modal>
         );

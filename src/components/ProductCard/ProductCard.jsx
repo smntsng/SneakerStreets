@@ -74,7 +74,7 @@ const ProductCard = props => {
                                             return <option key={index} value={index}>{size}</option>
                                         })}
                                     </select>
-                                    <button onClick={() => handleAddToBasket(productid , 'Red', 42)} className="btn cartBtn mt-3">
+                                    <button onClick={() => handleAddToBasket(productid , 42, 'Red')} className="btn cartBtn mt-3">
                                         <FontAwesomeIcon icon={faCartPlus} />
                                     </button>
                                 </div>
