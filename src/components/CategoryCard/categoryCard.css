@@ -1,0 +1,45 @@
+.categories-header {
+  font-size: 30px !important;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  padding: 1%;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 2px 20px 0px;
+  border-radius: 2rem; 
+}
+
+.card-container {
+  overflow: hidden;
+  box-shadow: 0 2px 20px 0px;
+  border-radius: 2rem; 
+}
+
+.card-image {
+  width:fit-content;
+  object-fit: cover;
+  height: 250px;
+}
+
+
+.card-btn {
+  margin: 0.5rem 0.5rem;
+  background-color: rgb(238, 236, 236);
+  border-style: solid;
+  border-radius: 0.5rem;
+  
+  
+}
+
+.cardDescription {
+  font-weight: bold;
+}
