@@ -1,5 +1,4 @@
 import sneakers from "../assets/json/sneakers"
-import Filter from "../components/Filter/Filter";
 import ProductCard from "../components/ProductCard/ProductCard";
 
 const Products = () => {
@@ -7,7 +6,7 @@ const Products = () => {
     return(
         <>
             <div style={{ width: '80%', margin: '50px auto'}}>
-                <h3 style={{textAlign:'left', marginLeft: '20px'}}>Products</h3>
+                <h3 style={{textAlign:'left', marginLeft: '5%'}}>Products</h3>
                 <div className="container-fluid">
                     <div className="row">
                     {/* Left column with filters (20%) */}
