@@ -13,7 +13,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 const Footer = () => {
     return(
         <div className= "main-footer">
-            <div className= "container " style={{ width: '100%', margin: '0 auto', maxWidth: '1400px' }}>
+            <div className= "container " style={{ width: '100%', margin: '0 auto', maxWidth: '1600px' }}>
                 <div className= "footer-section-menu text-start">
                     <h3><strong>Menu</strong></h3>
                     <ul>

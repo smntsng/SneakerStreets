@@ -48,7 +48,7 @@ const Home = () => {
     
     return (
         <>
-            <div style={{ width: '90%', margin: '0 auto', maxWidth: '1400px' }}>
+            <div style={{ width: '90%', margin: '0 auto', maxWidth: '1300px' }}>
                 <Hero />
                 {/* <MyVerticallyCenteredModal 
                     show={modalShow} 
@@ -58,14 +58,12 @@ const Home = () => {
                 <div className="container" style={{ margin: '0px', minWidth: '100%' }}>
                     <div className="row" >
                         {sneakers.map((sneaker, index) => <ProductCard key={index} data={sneaker} />)}
-                   
                     </div>
                 </div>
                 <h4 className='containerHeading mt-5'>Classics</h4>
                 <div className="container" style={{ margin: '0px', minWidth: '100%' }}>
                     <div className="row" >
-                        {sneakers.map((sneaker, index) => <ProductCard key={index} data={sneaker} />)}
-                   
+                        {sneakers.map((sneaker, index) => <ProductCard key={index} data={sneaker} />)}                   
                     </div>
                 </div>
             </div>
