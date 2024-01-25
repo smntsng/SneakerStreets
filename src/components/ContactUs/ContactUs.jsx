@@ -13,7 +13,7 @@ const ContactUs = () => {
             letterSpacing: ".1rem"
           }}
         >
-          Contact Us
+          <h1 className="mt-4">Contact Us</h1>
         </p>
         <form>
           <div className="form-group">
@@ -47,7 +47,7 @@ const ContactUs = () => {
               placeholder="Your Message"
             />
           </div>
-          <button type="submit" className="btn btn-primary" id="loginBtn">
+          <button type="submit" className="btn btn-primary m-3" id="loginBtn">
             Submit
           </button>
         </form>

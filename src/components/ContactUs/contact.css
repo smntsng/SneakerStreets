@@ -11,10 +11,12 @@ textarea, select, input, button { outline: none; }
 }
 
 .form-group label {
-  font-size: 12px;
+  font-size: 15px !important;
   float: left;
   padding: 2px;
   font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 .form-group input {
   outline: none;
@@ -36,4 +38,8 @@ input:focus, input {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: .12rem;
+}
+
+::placeholder {
+  font-size: 14px;
 }
