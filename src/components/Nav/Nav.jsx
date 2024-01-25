@@ -41,6 +41,9 @@ const Nav = () => {
                         <li>
                         <NavLink to="/contactus" end className="nav-link" > Contact us </NavLink>
                         </li>
+                        <li>
+                        <NavLink to="/blog" end className="nav-link" > News </NavLink>
+                        </li>
                     </ul>
 
                 </nav>

@@ -17,6 +17,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Registration from './pages/Registration';
 import Trending from './pages/Trending';
 import News from './components/News/News';
+import Blog from './pages/Blog';
 
 
 
@@ -48,6 +49,7 @@ function App() {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/trending" element={<News />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
           <ScrollToTop smooth color="Black" className="scrollBtn" />
           <Footer />
