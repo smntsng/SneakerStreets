@@ -14,14 +14,14 @@ const Nav = () => {
     }
 
     return (
-        <header className="header">
+        <header className="header " style={{ width: '88.5%', margin: '0 auto', maxWidth: '1400px' }}>
             {/* <div className="Header-top-row">
                 <p className="tab">Info</p>
                 <p><NavLink to="/login" end className="nav-link tab" >Login</NavLink></p>
             </div> */}
             <div className="header-bottom-row">
-                <div className="logo">
-                    <img src={logo} style={{ height: '40px' }}></img>
+                <div className="logo mt-2">
+                    <a href="/"><img src={logo} style={{ height: '40px' }}></img></a>
                 </div>
                 <nav className="navbar">
 

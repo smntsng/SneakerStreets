@@ -8,7 +8,7 @@ import slide1 from "../../assets/images/sliderEwp.png"
 
 const Hero = () => {
   return (
-<div className="hero-carousel-container">
+<div className="hero-carousel-container m-2">
     <Carousel>
       <Carousel.Item>
         <img

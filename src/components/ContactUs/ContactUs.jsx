@@ -13,7 +13,7 @@ const ContactUs = () => {
             letterSpacing: ".1rem"
           }}
         >
-          Contact Us
+          <h1 className="mt-4">Contact Us</h1>
         </p>
         <form>
           <div className="form-group">

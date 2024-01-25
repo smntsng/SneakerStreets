@@ -46,6 +46,11 @@
   padding: 8px 12px;
 }
 
+.cartBtn:hover { 
+  color: white;
+  background-color: #593598;
+}
+
 .card{
   width: 250px;
   height: 450px;
