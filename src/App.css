@@ -16,6 +16,28 @@ body{
   padding-top: 7px; 
 }
 
-.discountModal {
-  background-color: red !important;
+
+.modal-header {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  border-bottom: none !important;
+  border-radius: 0;
+}
+
+.close-button {
+  color: whitesmoke;
+  border: none;
+  padding: 1;
+  
+}
+
+.close-button:hover {
+  background-color: rgba(27, 26, 26, 0.815);
+}
+
+.modal-body{
+  padding: 0%;
+  box-shadow: 0 5px 20px 0 rgb(90, 85, 85), 0 25px 40px 0 rgb(0, 0, 0);
 }
