@@ -6,6 +6,7 @@ import ProductCard from '../components/ProductCard/ProductCard';
 import Button from 'react-bootstrap/Button';
 // import Modal from 'react-bootstrap/Modal';
 import { useState, useEffect } from "react";
+import CategoryCard from '../components/CategoryCard/CategoryCard';
 
 
 const Home = () => {
@@ -66,7 +67,19 @@ const Home = () => {
                         {sneakers.map((sneaker, index) => <ProductCard key={index} data={sneaker} />)}                   
                     </div>
                 </div>
+                <div>
+                    <h3 className= "categories-header">CATEGORIES</h3>
+                </div>
+                <div className= "wrapper">
+                    {/* row and 3 columns inside the row - one component with image and tags */}
+                    <CategoryCard category="Men" img= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRsTvA_0zzi0UNvSxAE9CSObi90WXY4cIzDQ&usqp=CAU" description= "Find the latest trends for Men here!"/>
+                    <CategoryCard category="Women" img= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjiAQL7vR2e7dx6OGjqogArFyPwyUJWezcXg&usqp=CAU" description= "Find the latest trends for Women here!"/>
+                    <CategoryCard category="Kids" img= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUxk40lziGTex3LPmjxiuiaqriUSVwffrqOA&usqp=CAU" description= "Find the latest trends for Kids here!"/>
+                    
+
+                </div>
             </div>
+            
         </>
     )
 }
