@@ -16,6 +16,8 @@ import ContactUs from './components/ContactUs/ContactUs'
 import ScrollToTop from "react-scroll-to-top";
 import Registration from './pages/Registration';
 import Trending from './pages/Trending';
+import News from './components/News/News';
+import Blog from './pages/Blog';
 
 
 
@@ -46,7 +48,7 @@ function App() {
             <Route path="/Checkout" element={<Checkout />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/registration" element={<Registration />} />
-            {/*  */}
+            <Route path="/blog" element={<Blog />} />
             <Route path="/trending" element={ <Trending /> } />
             <Route path="/products" element={<Registration />} />
           </Routes>
