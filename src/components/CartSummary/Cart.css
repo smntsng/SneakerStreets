@@ -1,3 +1,13 @@
+.checkout{
+  margin: 2% 0 2% 10%;
+text-align: left;
+text-decoration: none;
+color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 16px;
+}
+
+
 .checkoutButton {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -6,6 +16,7 @@
     cursor: pointer;
     border-radius: 30px;
     font-weight: bolder;
+    width:150px;
     
 
   }
@@ -23,7 +34,27 @@
     padding: 10px;
     margin: 0 10% 0 10%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
   }
+  
+
+  .total h2,
+  .total button {
+    display: flex;
+    align-items: center;
+  }
+
+  .total h2 {
+    flex: 1; 
+  }
+  
+  .total button {
+    flex-shrink: 0;
+  }
+  
 
   .atcproducts {
     border: 1px solid black;
@@ -31,11 +62,13 @@
     padding: 10px 0px 20% 10px;
     margin: 5% 0% 0 10%;
     width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
 
   .atcproducts,h2 {
     display: flex;
     justify-content: start;
+    
   }
 
   .products{
@@ -46,20 +79,34 @@
     display: inline-flex;
     justify-content:center ;
     width: 100%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+
+
     
   }
 
-  .voucher{
+  .voucher {
     width: 100%;
     margin: 5% 10% 0 10%;
-    border-left: 1px solid black;
-    padding: 
-    
-
-  
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Set flex direction to column */
+    align-items: left; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
-
-  .voucherButton{
+  
+  .input {
+    width: 100%; 
+    margin-bottom: 10px; 
+    padding: 0;
+  }
+  
+  .voucherButton {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 10px 20px;
@@ -67,11 +114,13 @@
     cursor: pointer;
     border-radius: 30px;
     font-weight: bolder;
+    width: 150px;
+  }
+  
+  .voucherButton:hover {
+    background-color: black;
   }
 
-  .voucherButton:hover {
-    background-color: black; 
-  }
 
   @media (max-width: 600px) {
 
