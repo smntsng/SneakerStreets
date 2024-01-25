@@ -5,8 +5,19 @@ import { Link } from 'react-router-dom'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import { faHeart, faFireFlameCurved } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { addToBasket } from '../../redux/actions/basketActions';
 
 const ProductCard = props => {
+
+    const dispatch = useDispatch();
+    
+    const basket = useSelector((state) => state.basket);
+
+    const handleAddToBasket = (item, size, color) => {
+        dispatch(addToBasket({item, size, color }));
+    };
+
     // Object destructuring for props
     const { id, image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag, popularity } = props.data;
     let customURL = "/productpage/"+id;
@@ -63,9 +74,9 @@ const ProductCard = props => {
                                             return <option key={index} value={index}>{size}</option>
                                         })}
                                     </select>
-                                    <a href="#" className="btn cartBtn mt-3">
+                                    <button onClick={() => handleAddToBasket(productid , 'Red', 42)} className="btn cartBtn mt-3">
                                         <FontAwesomeIcon icon={faCartPlus} />
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>

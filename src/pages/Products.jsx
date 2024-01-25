@@ -2,7 +2,7 @@ import sneakers from "../assets/json/sneakers"
 import ProductCard from "../components/ProductCard/ProductCard";
 
 const Products = () => {
-
+    
     return(
         <>
             <div style={{ width: '80%', margin: '50px auto'}}>
