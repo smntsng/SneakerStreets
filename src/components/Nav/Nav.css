@@ -11,6 +11,7 @@
     display: flex;
     gap: 25px;
     margin-bottom: 0 !important;
+    margin-right: 30px
 }
 
 .nav-links li {
@@ -74,4 +75,17 @@ padding-top: 5px;
 .header-nav-icons p {
     margin-bottom: 0 !important;
     
+}
+
+@media (max-width: 600px) {
+    .header {
+        margin: 0px 2% 0% 2%;
+        
+        padding: 0px 10px 10px 10px ;
+    
+    }
+
+.container{
+    justify-content: center;
+}
 }
