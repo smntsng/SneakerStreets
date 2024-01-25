@@ -7,35 +7,36 @@ import sneakers from '../../assets/json/sneakers'
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import ColourChart from "./ColourChart/ColourChart";
 
 const ProductPage = () => {
-
-    // Get ID from URL
+  // Get ID from URL
   const params = useParams();
 
-  const [images, setImages] = useState({
-    img1: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/06b754f8-09d3-4a15-a459-e37e955d6d08/air-max-tw-shoes-VMBzzV.png",
-    img2: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87278823-01f6-42ec-9f1e-cd6961842c1f/air-max-tw-shoes-VMBzzV.png",
-    img3: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8518dcbf-fd9f-4cc1-af70-60f1485c5365/air-max-tw-shoes-VMBzzV.png",
-    img4: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/894dc89b-162a-4dfa-bda5-716cd5abb31b/air-max-tw-shoes-VMBzzV.png"
-  });
-
-  const [activeImg, setActiveImage] = useState(images.img1);
-
-  const [amount, setAmount] = useState(1);
   let product = sneakers.filter( (data) => {
-      return data.id == params.id;
-    
+    return data.id == params.id;
   })
 
-  const { image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag } = product[0];
+
+  const { id, image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag } = product[0];
+  const [activeImg, setActiveImage] = useState(image[0]);
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+    setActiveImage(image[0])
+  }, [params.id]);
+
+
+  const [amount, setAmount] = useState(1);
+
+
 
   return (
     <div style={{ width: '80%', margin: '0px auto'}}>
       <div className="flex flex-col  lg:flex-row rounded-xl p-5 gap-16 lg:items-start">
         <div className="flex flex-col gap-6 lg:w-2/3">
           <img
-            src={image[0]}
+            src={activeImg}
             alt=""
             className="img w-full h-full aspect-square object-cover"
           />
@@ -44,25 +45,25 @@ const ProductPage = () => {
               src={image[1]}
               alt=""
               className="w-28 h-28 rounded-md cursor-pointer "
-              onClick={() => setActiveImage(images.img1)}
+              onClick={() => setActiveImage(image[1])}
             />
             <img
               src={image[2]}
               alt=""
               className="w-28 h-28 rounded-md cursor-pointer "
-              onClick={() => setActiveImage(images.img2)}
+              onClick={() => setActiveImage(image[2])}
             />
             <img
               src={image[3]}
               alt=""
               className="w-28 h-28 rounded-md cursor-pointer "
-              onClick={() => setActiveImage(images.img3)}
+              onClick={() => setActiveImage(image[3])}
             />
             <img
               src={image[4]}
               alt=""
               className="w-28 h-28 rounded-md cursor-pointer "
-              onClick={() => setActiveImage(images.img4)}
+              onClick={() => setActiveImage(image[4])}
             />
           </div>
         </div>
@@ -82,9 +83,10 @@ const ProductPage = () => {
           </div>
           <h6 className=" text-2xl font-bold text-start">£{price}</h6>
           <div className="flex flex-row items-center">
-            <>
-              <SizingChart />
-            </>
+              <SizingChart size={sizeOption}/>
+          </div>
+          <div className="flex flex-row items-center">
+              <ColourChart color={colourOption} />
           </div>
           <div className="flex flex-row items-center gap-12 mt-3">
             <div className="flex flex-row items-center">
@@ -118,9 +120,9 @@ const ProductPage = () => {
             you're ready for the next step, the 5 windows underfoot deliver a
             modern edge to visible Air cushioning. <br />
             <li className="pt-3 pb-2">
-              <strong>Colour Shown: Black/Anthracite/Black/Black</strong> 
+              <strong>Colour Shown: {colourOption[0]} </strong> 
             </li>
-            <li> <strong>Style: DQ3984-003</strong> </li>
+            <li> <strong>Style: {styleCode}</strong> </li>
           </p>
           <>
             <Accordion />
