@@ -1,10 +1,14 @@
-
 /* Registration page */
-form{
-  font-family: Inter,sans-serif;
+form {
+  font-family: Inter, sans-serif;
 }
-textarea, select, input, button { outline: none; }
-.registerContainer{
+textarea,
+select,
+input,
+button {
+  outline: none;
+}
+.registerContainer {
   width: 50%;
   border: 1px solid #eaeaea;
   border-radius: 16px;
@@ -21,21 +25,31 @@ textarea, select, input, button { outline: none; }
 .form-group input {
   outline: none;
 }
-input:focus, input {
+input:focus,
+input {
   outline: none;
 }
 
-#nameHelp{
+#nameHelp {
   font-size: 12px;
   display: block;
 }
 
-#registerBtn{
+#registerBtn {
   margin-top: 15px !important;
   width: 80%;
   background-color: black !important;
-  font-family: 'Monument Extended', sans-serif;
+  font-family: "Monument Extended", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: .12rem;
+  letter-spacing: 0.12rem;
+}
+
+.clickHere:hover {
+  color: #593598;
+}
+
+
+.btnHov {
+  background-color: #593598;
 }
