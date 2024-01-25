@@ -30,7 +30,7 @@ const Nav = () => {
                             <NavLink to="/" end className="nav-link" > Home </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/trending" end className="nav-link" >Trending</NavLink>
+                            <NavLink to="/popular" end className="nav-link" > Popular </NavLink>
                         </li>
                         <li>
                             <NavLink to="/products" end className="nav-link" > Products </NavLink>
