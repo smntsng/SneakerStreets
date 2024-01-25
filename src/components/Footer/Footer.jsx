@@ -21,8 +21,9 @@ const Footer = () => {
                         
                         <li><Link to= "/Products">Products</Link></li>
                         <li><Link to= "/Popular">Popular</Link></li>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><Link to= "/Blog">Blog</Link></li>
+                        <li><Link to= "/ContactUs">Contact Us</Link></li>
+                       
                     </ul>
                 </div>
                 <div className= "footer-section-contact text-start ">
