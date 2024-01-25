@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './News.css';
 
 const Blog = () => {
-    const apikey = '7e694e9ad9b4469cd02e99e6799cfd2c';
+    const apikey = '82b618522850a68c5f6289864871aa6e';
     const url = 'https://gnews.io/api/v4/search?q=nike+sneakers&lang=en&country=us+uk&max=10&apikey=' + apikey;
 
     const [articles, setArticles] = useState([]);
