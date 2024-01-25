@@ -1,7 +1,7 @@
 import sneakers from "../assets/json/sneakers"
 import ProductCard from "../components/ProductCard/ProductCard";
 
-const Trending = () => {
+const Popular = () => {
 
     // create an object of products
     var filterMap = {};
@@ -29,7 +29,7 @@ const Trending = () => {
     return(
         <>
             <div style={{ width: '80%', margin: '50px auto'}}>
-                <h3 style={{textAlign:'left'}}>Popular Products</h3>
+                <h3 style={{textAlign:'left', marginLeft: '20px'}}>Popular Products</h3>
                 <div className="container" style={{marginTop:'0px', minWidth:'100%'}}>
                     <div className="row" style={{margin: '0px'}}>
                         {popularProducts.map( (sneaker, index) => <ProductCard key={index} data={sneaker} popularity={true}/> )}
@@ -40,4 +40,4 @@ const Trending = () => {
     )
 }
 
-export default Trending;
+export default Popular;
