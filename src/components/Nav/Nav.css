@@ -83,9 +83,7 @@ padding-top: 5px;
     width: 100%;
     
 }
-.burgermenu{
-    margin:1%;
-}
+
 
 .header-nav-icons{
     margin:0% 5% 0% 5% ;
@@ -99,8 +97,12 @@ padding-top: 5px;
     
     }
     .header-nav-icons{
-        margin:0% 5% 0% 20% ;
+        margin:5% 5% 0% 20% ;
 
+    }
+
+    .logo{
+        margin: 0 0 5% 0;
     }
 
 
