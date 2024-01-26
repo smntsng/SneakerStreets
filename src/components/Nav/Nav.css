@@ -102,8 +102,11 @@ padding-top: 5px;
     right: -150px;
 }
 
-
-
+.basketItems{
+    position: relative;
+    display: inline;
+    font-size: 20px;
+}
 @media (max-width: 600px) {
     .header {
         margin: 0px 2% 0% 2%;
