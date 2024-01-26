@@ -25,11 +25,10 @@ const Popular = () => {
 
     // console.log(popularProducts)
 
-
     return(
         <>
             <div style={{ width: '80%', margin: '100px auto'}}>
-                <h3 style={{textAlign:'left', marginLeft: '20px'}}>Popular Products</h3>
+                <h1 className="mb-3" style={{textAlign:'center', marginLeft: '20px'}}>Popular Products</h1>
                 <div className="container" style={{marginTop:'0px', minWidth:'100%'}}>
                     <div className="row" style={{margin: '0px'}}>
                         {popularProducts.map( (sneaker, index) => <ProductCard key={index} data={sneaker} popularity={true}/> )}

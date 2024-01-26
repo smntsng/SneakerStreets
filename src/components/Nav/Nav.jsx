@@ -24,7 +24,7 @@ const Navigation = () => {
                             src={logo}
                             width="200"
                             height="auto"
-                            className="d-inline-block align-top"
+                            className="d-inline-block align-top logo"
                             alt="React Bootstrap logo"
                         />
                     </Navbar.Brand>
@@ -40,11 +40,11 @@ const Navigation = () => {
                         </Nav>
                     </Navbar.Collapse>
                     <div className="header-nav-icons">
-                    <NavLink to="/login" className="nav-link">
+                    <NavLink to="/login" className="nav-link icon">
                             <FaUser />
                         </NavLink>
 
-                        <NavLink to="/Checkout" className="nav-link">
+                        <NavLink to="/Checkout" className="nav-link icon">
                             <FaShoppingCart />
                         </NavLink>
                     </div>

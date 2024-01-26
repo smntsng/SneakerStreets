@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
+import "./accordion.css";
 
 function AllCollapseExample() {
   return (
