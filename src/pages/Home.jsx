@@ -7,6 +7,10 @@ import CategoryCard from '../components/CategoryCard/CategoryCard';
 import { useState, useEffect } from 'react';
 import ModalDiscount from '../components/ModalDiscount/ModalDiscount';
 
+// cards
+import menImage from '../assets/images/mensAd3.png'
+import womenImage from '../assets/images/womensAd3.png'
+import kidsImage from '../assets/images/kidsAd3.png'
 
 const Home = () => {
     //Discount Modal
@@ -37,9 +41,9 @@ const Home = () => {
                     <h3 style={{marginTop: '30px'}} className= "categories-header">CATEGORIES</h3>
                 </div>
                 <div className= "wrapper">
-                    <CategoryCard category="Men" img= "src/assets/images/mensAd3.png" description= "Find the latest trends for Men here!"/>
-                    <CategoryCard category="Women" img= "src/assets/images/womensAd3.png" description= "Find the latest trends for Women here!"/>
-                    <CategoryCard category="Kids" img= "src/assets/images/kidsAd3.png" description= "Find the latest trends for Kids here!"/>
+                    <CategoryCard category="Men" img={menImage} description= "Find the latest trends for Men here!"/>
+                    <CategoryCard category="Women" img={womenImage} description= "Find the latest trends for Women here!"/>
+                    <CategoryCard category="Kids" img={kidsImage} description= "Find the latest trends for Kids here!"/>
                 </div>
                 
                 <h4 className='containerHeading mt-5'>Classics</h4>
