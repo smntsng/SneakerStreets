@@ -12,13 +12,7 @@ import { getBasketItemCount } from '../../redux/selectors/Selector';
 
 
 const Navigation = () => {
-    const [showSearchBar, setshowSearchBar] = useState(false);
     const basketItemCount = useSelector(getBasketItemCount);
-
-    
-    const displaySearchBar = () => {
-        setshowSearchBar(true);
-    };
 
     return (
         <header className="header">
@@ -49,7 +43,7 @@ const Navigation = () => {
                             <FaUser />
                         </NavLink>
 
-                        <NavLink to="/Checkout" className="nav-link icon">
+                        <NavLink to="/checkout" className="nav-link icon">
                             <FaShoppingCart style={{display:'inline'}}/><p className='basketItems'> { basketItemCount}</p>
                         </NavLink>
                     </div>

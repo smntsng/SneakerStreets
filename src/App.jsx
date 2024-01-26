@@ -16,6 +16,7 @@ import Registration from './pages/Registration';
 import Popular from './pages/Popular';
 import Products from './pages/Products';
 import Blog from './pages/Blog'
+import Securecheckout from './components/Checkout/Secure/SecureCheckout';
 
 
 
@@ -38,19 +39,20 @@ function App() {
       ) : (
         <Router>
           <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/login" element={<Login />} />      
-            <Route path="/productpage/:id" element={<ProductPage />} />
-            <Route path="/Checkout" element={<Checkout />} />
-            <Route path="/contactus" element={<Contact />} />
-            <Route path="/registration" element={<Registration />} />
-            {/*  */}
-            <Route path="/popular" element={ <Popular /> } />
-            <Route path="/products" element={<Products />} />
-            <Route path="/blog" element={<Blog />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/login" element={<Login />} />      
+              <Route path="/productpage/:id" element={<ProductPage />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/contactus" element={<Contact />} />
+              <Route path="/registration" element={<Registration />} />
+              {/*  */}
+              <Route path="/popular" element={ <Popular /> } />
+              <Route path="/products" element={<Products />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/securecheckout" element={<Securecheckout />} />
+            </Routes>
           <ScrollToTop smooth color="Black" className="scrollBtn" />
           <Footer />
         </Router>
