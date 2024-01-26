@@ -3,10 +3,16 @@ import Carousel from 'react-bootstrap/Carousel';
 import CarouselItem from 'react-bootstrap/CarouselItem';
 import './Hero.css';
 
+
 //Images
 
 import slide1 from "../../assets/images/sliderEwp.png"
-
+import slideimage2 from '../../assets/images/sliderImage2.png'
+import slideimage3 from '../../assets/images/sliderImage3.png'
+import slideimage4 from '../../assets/images/sliderImage4.png'
+import slideimage5 from '../../assets/images/sliderImage5.png'
+import slideimage6 from '../../assets/images/sliderImage6.png'
+import slideimage7 from '../../assets/images/sliderImage7.png'
 const Hero = () => {
   return (
         <div className="hero-carousel-container m-2">
@@ -70,7 +76,7 @@ const Hero = () => {
               <CarouselItem>
                 <img
                   className="d-block imgSlide "
-                  src="src/assets/images/2.png"
+                  src={slideimage2}
                   alt="Fifth slide"
                 />
                 <div className="carouselCTA">
@@ -83,7 +89,7 @@ const Hero = () => {
               <CarouselItem>
                 <img
                   className="d-block imgSlide "
-                  src="src/assets/images/3.png"
+                  src={slideimage3}
                   alt="Sixth slide"
                 />
                 <div className="carouselCTA">
@@ -96,7 +102,7 @@ const Hero = () => {
               <CarouselItem>
                 <img
                   className="d-block imgSlide "
-                  src="src/assets/images/4.png"
+                  src={slideimage4}
                   alt="Seventh slide"
                 />
                 <div className="carouselCTA">
@@ -109,7 +115,7 @@ const Hero = () => {
               <CarouselItem>
                 <img
                   className="d-block imgSlide "
-                  src="src/assets/images/5.png"
+                  src={slideimage5}
                   alt="Eighth slide"
                 />
                 <div className="carouselCTA">
@@ -122,7 +128,7 @@ const Hero = () => {
               <CarouselItem>
                 <img
                   className="d-block imgSlide "
-                  src="src/assets/images/6.png"
+                  src={slideimage6}
                   alt="Eighth slide"
                 />
                 <div className="carouselCTA">
@@ -135,7 +141,7 @@ const Hero = () => {
               <CarouselItem>
                 <img
                   className="d-block imgSlide "
-                  src="src/assets/images/7.png"
+                  src={slideimage7}
                   alt="Ninth slide"
                 />
                 <div className="carouselCTA">
