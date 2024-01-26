@@ -17,6 +17,11 @@ const BasketItem = (props) => {
     const handleRemoveFromBasket = (itemId, size, color) => {
         dispatch(removeFromBasket(itemId, size, color));
     };
+
+    const amountHandler = () => {
+        setAmount((prev) => prev - 1)
+        if (amount === 1) {handleRemoveFromBasket(props.item, props.color, props.size)}
+    }
     
     let customURL = "/productpage/"+props.item;
 
@@ -41,6 +46,11 @@ const BasketItem = (props) => {
                                     £{product[0].price}
                                 </h5>
                             </div>
+                            <div className="price text-success" style={{position:'absolute', right:'20px', bottom:'20px'}}>
+                                <h5 className="mt-4" style={{color:'black', fontSize:'14px'}}>
+                                    £{product[0].price * amount}
+                                </h5>
+                            </div>
                             <p style={{fontSize: '9px !important'}}>Colour: {props.color} | Size: {props.size}</p>
                         </div>
 
@@ -49,7 +59,7 @@ const BasketItem = (props) => {
                             <div className="flex flex-row items-center">
                                 <button
                                     className="upDown bg-gray-200 py-2 px-4 rounded-md text-violet-800 text-1"
-                                    onClick={() => setAmount((prev) => prev - 1)}
+                                    onClick={amountHandler}
                                     >
                                         -
                                     </button>

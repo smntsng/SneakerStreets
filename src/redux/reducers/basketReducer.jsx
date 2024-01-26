@@ -20,7 +20,7 @@ switch (action.type) {
         const { itemId, size, color } = action.payload;
         const updatedItems = state.items.filter(
             (item) => {
-                return item.item !== itemId
+                return item.item !== itemId && item.size !== size && item.color !== color
             }
         );
         console.log("UT", updatedItems)
