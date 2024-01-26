@@ -1,6 +1,8 @@
 .categories-header {
   font-size: 30px !important;
   padding-top: 10px;
+  margin-bottom: -14px;
+  margin-left: 10px;
   text-align: left;
 }
 
@@ -9,7 +11,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   justify-content: center;
-  padding: 1%;
+  padding: .5%;
 }
 
 /* .card {
@@ -20,7 +22,7 @@
 
 .card-container {
   overflow: hidden;
-  box-shadow: 0 2px 20px 0px;
+  box-shadow: 4px 0px 15px 0px rgba(141, 141, 141, 0.75);
   border-radius: 0.5rem; 
 }
 
@@ -32,14 +34,20 @@
 
 
 .card-btn {
-  margin: 0.5rem 0.5rem;
+  margin: 1rem;
+  margin-bottom: 24px;
+  padding: .5rem 1.5rem;
   background-color: rgb(238, 236, 236);
   border-style: solid;
   border-radius: 0.5rem;
-  
-  
+}
+
+.card-btn:hover {
+  color: white;
+  background-color: #593598;
 }
 
 .cardDescription {
   font-weight: bold;
+  margin-top: 20px;
 }
