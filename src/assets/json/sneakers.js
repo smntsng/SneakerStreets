@@ -144,7 +144,7 @@ const sneakers =
         popularity: 15,
         image : ['https://cdn.media.amplience.net/i/office/4870204440_sd1.jpg?$highres$&w=800&h=710&fmt=auto&qlt=default&fmt.jpeg',
         'https://cdn.media.amplience.net/i/office/4870204440_dt1.jpg?$highres$&w=800&h=710&fmt=auto&qlt=default&fmt.jpeg',
-        'hhttps://cdn.media.amplience.net/i/office/4870204440_bk1.jpg?$highres$&w=800&h=710&fmt=auto&qlt=default&fmt.jpeg',
+        'https://cdn.media.amplience.net/i/office/4870204440_bk1.jpg?$highres$&w=1068&h=934&fmt=auto&qlt=default&fmt.jpeg',
         'https://cdn.media.amplience.net/i/office/4870204440_bv1.jpg?$highres$&w=800&h=710&fmt=auto&qlt=default&fmt.jpeg',
         'https://cdn.media.amplience.net/i/office/4870204440_pr1.jpg?$highres$&w=800&h=710&fmt=auto&qlt=default&fmt.jpeg'],
     },
