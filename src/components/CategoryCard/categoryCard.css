@@ -7,11 +7,10 @@
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  display: flex;
   justify-content: center;
-  padding: .5%;
+  padding: 1.5%;
+  gap: 1.5rem;
 }
 
 /* .card {
@@ -40,7 +39,7 @@
   background-color: rgb(238, 236, 236);
   border-style: solid;
   border-radius: 0.5rem;
-  color: black;
+  
 }
 
 .card-btn:hover {
