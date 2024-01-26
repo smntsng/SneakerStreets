@@ -21,6 +21,9 @@ const ProductPage = () => {
 
   const handleAddToBasket = (item, quantity, size, color) => {
       dispatch(addToBasket({item, quantity, size, color }));
+      setSize(undefined);
+      setColor(undefined);
+      setAmount(1)
   };
 
   // Color and Size handlers

@@ -7,8 +7,6 @@ import Footer from './components/Footer/Footer'
 import ProductPage from './components/Product Page/ProductPage'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import Productpage from './pages/Productpage';
-import Hero from './components/Hero/Hero'
 import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader';
 import Checkout from './pages/Checkout';
@@ -17,6 +15,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Registration from './pages/Registration';
 import Popular from './pages/Popular';
 import Products from './pages/Products';
+import Blog from './pages/Blog'
 
 
 
@@ -50,6 +49,7 @@ function App() {
             {/*  */}
             <Route path="/popular" element={ <Popular /> } />
             <Route path="/products" element={<Products />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
           <ScrollToTop smooth color="Black" className="scrollBtn" />
           <Footer />

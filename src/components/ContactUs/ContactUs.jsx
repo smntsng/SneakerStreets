@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <>
       <Container fluid className="loginContainer">
-        <p
+        <div
           style={{
             fontFamily: "Monument Extended, sans-serif",
             textTransform: "uppercase",
@@ -14,7 +14,7 @@ const ContactUs = () => {
           }}
         >
           <h1 className="mt-4">Contact Us</h1>
-        </p>
+        </div>
         <form>
           <div className="form-group">
             <label htmlFor="nameInput">Name</label>

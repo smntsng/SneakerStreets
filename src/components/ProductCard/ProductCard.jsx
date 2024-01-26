@@ -20,6 +20,8 @@ const ProductCard = props => {
 
     const handleAddToBasket = (item, quantity, size, color) => {
         dispatch(addToBasket({item, quantity, size, color }));
+        setColor(undefined);
+        setSize(undefined);
     };
 
     // Color and Size handlers
