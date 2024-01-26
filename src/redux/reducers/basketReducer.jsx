@@ -29,6 +29,7 @@ switch (action.type) {
             ...state,
             items: updatedItems,
         };
+    
     default:
     return state;
 }
