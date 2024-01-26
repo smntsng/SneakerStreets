@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 
-function DeliveryAccordin() {
+function DeliveryAccordion() {
     return (
         <Accordion className="accordion">
             <Accordion.Item eventKey="0" className="accordionItem">
@@ -28,4 +28,4 @@ function DeliveryAccordin() {
     );
 }
 
-export default DeliveryAccordin;
+export default DeliveryAccordion;

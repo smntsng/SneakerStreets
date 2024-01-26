@@ -1,8 +1,9 @@
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import './basketProcess.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import DeliveryAccordin from '../DeliveryAccordin/DeliverAccordin';
+import DeliveryAccordion from '../DeliveryAccordion/DeliverAccordion';
 import PaymentProcess from '../PaymentProcess/PaymentProcess';
+import PromoAccordion from '../PromoAccordion/PromoAccordion';
 
 const BasketProcess = props => {
     return(
@@ -16,8 +17,9 @@ const BasketProcess = props => {
                 <FontAwesomeIcon icon={faCheck} />
             </div>
         </div>
-        <DeliveryAccordin />
+        <DeliveryAccordion />
         <PaymentProcess />
+        <PromoAccordion />
         </>
     )
 }

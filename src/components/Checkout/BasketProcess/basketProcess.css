@@ -26,7 +26,7 @@
 /* Accordin */
 .accordionHeading {
     font-size: 14px !important;
-    padding-top: 14px;
+    padding-top: 20px;
     height: 50px;
 }
 .accordion-button:not(.collapsed) {
@@ -36,6 +36,13 @@
 
 button.accordion-button:focus{
     box-shadow: inherit;
+}
+.accordionItem{
+    border: 1px solid #1a1a1a;
+    border-radius: 0 !important;
+    border-left: 0px;
+    border-right: 0px;
+
 }
 .accordionItem button{
     height: 50px;
@@ -91,12 +98,27 @@ button.accordion-button:focus{
     justify-content: center;
     position: relative;
     color: black;
-    height: 40px;
+    height: 60px;
     border: 1px solid #c4c4c4;
     border-radius: 5px;
+    font-size: 14px !important;
 }
 .extraPaymentButton img{
     width: 100px;
     position: absolute;
     right: 25px;
+}
+.promo{
+    border: 1px solid #808080 !important;
+    border-radius: 0.5rem;
+    padding: 10px !important;
+    width: 100% !important;
+    margin-bottom: 0px !important;
+}
+.promo-button{
+    background-color: #1a1a1a !important;
+    color: white;
+    padding: 0px 20px;
+    height: 44px !important;
+    border-radius: 4px;
 }

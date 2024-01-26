@@ -15,6 +15,8 @@ const Cart = () => {
     };
 
     const basketItems = useSelector((state) => state.basket.items);
+    // Total Price
+
     return(
         <>
         <div style={{ width: '80%', margin: '50px auto'}}>
