@@ -3,13 +3,21 @@ import Card from 'react-bootstrap/Card';
 import sneakers from '../../assets/json/sneakers';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeFromBasket } from '../../redux/actions/basketActions';
 
-const BasketItem = (props) => {    
+const BasketItem = (props) => {  
+    const dispatch = useDispatch();  
     const [amount, setAmount] = useState(1);
+
     let product = sneakers.filter( (data) => {
         return data.id == props.item;
     })
-    console.log(product)
+    
+    const handleRemoveFromBasket = (itemId, size, color) => {
+        dispatch(removeFromBasket(itemId, size, color));
+    };
+    
     let customURL = "/productpage/"+props.item;
 
     return (
@@ -53,7 +61,9 @@ const BasketItem = (props) => {
                                     +
                                 </button>
                             </div>
-                            <button className="text-black py-2 px-2 rounded-md" style={{background: 'transparent !important', textDecoration: 'underline'}}>
+                            <button className="text-black py-2 px-2 rounded-md" 
+                                    style={{background: 'transparent !important',textDecoration: 'underline'}}
+                                    onClick={()=>{handleRemoveFromBasket(props.item, props.color, props.size)}}>
                             Remove
                             </button>
                     </div>

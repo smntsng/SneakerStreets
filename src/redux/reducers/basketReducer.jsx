@@ -15,7 +15,20 @@ switch (action.type) {
         ...state,
         items: newItems,
     };
-    // handle other actions if needed
+
+    case 'REMOVE_FROM_BASKET':
+        const { itemId, size, color } = action.payload;
+        const updatedItems = state.items.filter(
+            (item) => {
+                return item.item !== itemId
+            }
+        );
+        console.log("UT", updatedItems)
+        localStorage.setItem('basket', JSON.stringify(updatedItems));
+        return {
+            ...state,
+            items: updatedItems,
+        };
     default:
     return state;
 }
