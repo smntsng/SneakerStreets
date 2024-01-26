@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo3-blackFont.png';
 import { FaUser, FaShoppingCart } from "react-icons/fa";
 import { useState } from "react";
-import './nav.css';
+import './Nav.css';
 import Checkout from '../../pages/Checkout';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
