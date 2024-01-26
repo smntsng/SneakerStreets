@@ -22,7 +22,7 @@ const LoginForm = () => {
                         </div>
                         <button type="submit" className="btn btn-primary" id="loginBtn">Login</button>
                             <div className= "signupAction m-3">
-                                <Link to="/registration"> Don't have an account? <strong className=" text-violet-700">Click here to sign up</strong></Link>
+                                <Link to="/registration"> Don't have an account? <strong className=" text-violet-700">Click here to sign up!</strong></Link>
                             </div>
                     </form>
                 </Container>
