@@ -7,10 +7,15 @@ import Checkout from '../../pages/Checkout';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useSelector } from 'react-redux';
+import { getBasketItemCount } from '../../redux/selectors/Selector';
 
 
 const Navigation = () => {
     const [showSearchBar, setshowSearchBar] = useState(false);
+    const basketItemCount = useSelector(getBasketItemCount);
+
+    
     const displaySearchBar = () => {
         setshowSearchBar(true);
     };
@@ -45,7 +50,7 @@ const Navigation = () => {
                         </NavLink>
 
                         <NavLink to="/Checkout" className="nav-link icon">
-                            <FaShoppingCart />
+                            <FaShoppingCart style={{display:'inline'}}/><p className='basketItems'> { basketItemCount}</p>
                         </NavLink>
                     </div>
                 </Container>

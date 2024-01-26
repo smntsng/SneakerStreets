@@ -2,15 +2,31 @@ import sneakers from "../assets/json/sneakers";
 import ProductCard from "../components/ProductCard/ProductCard";
 import React from 'react';
 import SearchBar from "../components/SearchBar/Search";
-
+import { useState } from "react";
 
 const Products = () => {
+  const [searchText, setSearchText] = useState('');
+  const [filteredSneakers, setFilteredSneakers] = useState(sneakers);
+
+  const handleSearchChange = (event) => {
+    const typedText = event.target.value;
+    setSearchText(typedText);
+
+    // Filter based on the search text
+    const filteredSneakers = sneakers.filter((sneaker) =>
+      sneaker.title.toLowerCase().includes(searchText.toLowerCase())
+    );
+
+    setFilteredSneakers(filteredSneakers);
+  };
   return (
     <>
     
       <div style={{ width: '80%', margin: '100px auto' }}>
         <h1 className="mb-3" style={{ textAlign: 'center', marginLeft: '5%' }}>Browse All Products</h1>
-        <div className="m-4"><SearchBar /></div>
+        <div className="m-4">
+          <SearchBar searchText={searchText} handleSearchChange={handleSearchChange}/>
+        </div>
         <div className="container-fluid mt-5">
           <div className="row">
             {/* Left column with filters (20%) */}
@@ -65,7 +81,7 @@ const Products = () => {
             <div className="col-10">
               <div className="container" style={{ marginTop: '0px', minWidth: '100%' }}>
                 <div className="row" style={{ margin: '0px' }}>
-                  {sneakers.map((sneaker, index) => (
+                  {filteredSneakers.map((sneaker, index) => (
                     <ProductCard key={index} data={sneaker} popularity={true} />
                   ))}
                 </div>

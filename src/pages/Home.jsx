@@ -30,7 +30,7 @@ const Home = () => {
                 <h4 className='containerHeading'>New Arrivals</h4>
                 <div className="container" style={{ margin: '0px', minWidth: '100%' }}>
                     <div className="row" >
-                        {sneakers.map((sneaker, index) => <ProductCard key={index} data={sneaker} />)}
+                        {sneakers.slice(0, 5).map((sneaker, index) => <ProductCard key={index} data={sneaker} />)}
                     </div>
                 </div>
                 <div>
@@ -45,7 +45,7 @@ const Home = () => {
                 <h4 className='containerHeading mt-5'>Classics</h4>
                 <div className="container" style={{ margin: '0px', minWidth: '100%' }}>
                     <div className="row" >
-                        {sneakers.map((sneaker, index) => <ProductCard key={index} data={sneaker} />)}                   
+                        {sneakers.slice(0, 5).map((sneaker, index) => <ProductCard key={index} data={sneaker} />)}                   
                     </div>
                 </div>
             </div>
