@@ -18,9 +18,15 @@ const Cart = () => {
     // Total Price
     const [totalPrice, setTotalPrice] = useState(0)
 
-    const priceupdateHandler =(newPrice) => {
-        setTotalPrice(newPrice);
+    //add to price
+    const priceAddHandler =(newPrice) => {
+        setTotalPrice(prev => prev + newPrice);
     }
+    //remove from price
+    const priceSubHandler =(newPrice) => {
+        setTotalPrice(prev => prev - newPrice);
+    }
+
 
     return(
         <>
@@ -36,13 +42,14 @@ const Cart = () => {
                                     <ul>
                                         {
                                         basketItems.map((item, index) => {
-                                            console.log(item)
                                             return <BasketItem 
                                             key={index} 
                                             item={item.item} 
                                             size={item.size} 
                                             color={item.color} 
-                                            priceupdateHandler={priceupdateHandler}/>
+                                            total={totalPrice}
+                                            priceAddHandler={priceAddHandler}
+                                            priceSubHandler={priceSubHandler}/>
                                         })
                                         }
                         
@@ -52,7 +59,7 @@ const Cart = () => {
                     </div>
                     {/* Right Side */}
                     <div style={{ border: '1px solid #c4c4c4', minHeight: '400px', borderRadius:'5px'}}>
-                        <BasketProcess total={totalPrice} priceupdateHandler={priceupdateHandler}/>
+                        <BasketProcess total={totalPrice} />
                     </div>
                 </div>
 

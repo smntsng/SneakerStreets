@@ -18,28 +18,28 @@ const BasketItem = (props) => {
         dispatch(removeFromBasket(itemId, size, color));
     };
 
-    const [total, setTotal] = useState(product[0].price * amount);
+    const [total, setTotal] = useState(0);
     // update total on load
     useEffect(()=>{
-        props.priceupdateHandler(total);
+        props.priceAddHandler(total);
     }, [total])
 
     //update total on amount change
     useEffect(()=>{
         setTotal(product[0].price * amount)
-    }, [amount])
+    }, [])
 
     const amountHandlerSub = () => {
         setAmount((prev) => prev - 1)
-        props.priceupdateHandler(total)
+        props.priceSubHandler(product[0].price)
+
         if (amount === 1) {
             handleRemoveFromBasket(props.item, props.color, props.size)
-            props.priceupdateHandler(0)
         }
     }
     const amountHandlerAdd = () => {
         setAmount((prev) => prev + 1)
-        props.priceupdateHandler(total)
+        props.priceAddHandler(product[0].price)
     }
     
     let customURL = "/productpage/"+props.item;
@@ -67,7 +67,7 @@ const BasketItem = (props) => {
                             </div>
                             <div className="price text-success" style={{position:'absolute', right:'20px', bottom:'20px'}}>
                                 <h5 className="mt-4" style={{color:'black', fontSize:'14px'}}>
-                                    £{product[0].price * amount}
+                                    £{(product[0].price * amount).toFixed(2)}
                                 </h5>
                             </div>
                             <p style={{fontSize: '9px !important'}}>Colour: {props.color} | Size: {props.size}</p>

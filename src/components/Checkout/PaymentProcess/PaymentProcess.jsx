@@ -4,10 +4,10 @@ const PaymentProcess = props => {
     return(
         <>
             <div className="totalPriceSection">
-                <p> Basket Total: <span>£{props.total}</span></p>
+                <p> Basket Total: <span>£{(props.total).toFixed(2)}</span></p>
                 <hr />
 
-                <p><strong>Total: </strong> <span>£{props.total}</span></p>
+                <p><strong>Total: </strong> <span>£{(props.total).toFixed(2)}</span></p>
                 <hr/>
             </div>
             <div className="checkoutOptions">
