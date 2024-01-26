@@ -21,7 +21,7 @@ const Home = () => {
 
     return (
         <>
-            <div style={{ width: '90%', margin: '0 auto', maxWidth: '1300px' }}>
+            <div style={{ width: '90%', margin: '50px auto', maxWidth: '1300px' }}>
                 <Hero />
                 <ModalDiscount
                     show={modalShow}

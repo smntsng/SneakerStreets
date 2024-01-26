@@ -28,13 +28,13 @@ const Navigation = () => {
                             alt="React Bootstrap logo"
                         />
                     </Navbar.Brand>
-                    <Navbar.Toggle  aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse className="burgermenu" id="basic-navbar-nav">
+                    <Navbar.Toggle  className="burgermenu"
+                    aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav" >
                         <Nav className="me-auto justify-content-center navItems">
                             <NavLink to="/" end className="nav-link" > Home </NavLink>
                             <NavLink to="/popular" end className="nav-link" > Popular </NavLink>
                             <NavLink to="/products" end className="nav-link" > Products </NavLink>
-                            <NavLink to="/login" end className="nav-link" > Login </NavLink>
                             <NavLink to="/contactus" end className="nav-link" > Contact us </NavLink>
                             <NavLink to="/blog" end className="nav-link" > Blog </NavLink>
                         </Nav>

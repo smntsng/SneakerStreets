@@ -27,7 +27,7 @@ const Popular = () => {
 
     return(
         <>
-            <div style={{ width: '80%', margin: '50px auto'}}>
+            <div style={{ width: '80%', margin: '100px auto'}}>
                 <h1 className="mb-3" style={{textAlign:'center', marginLeft: '20px'}}>Popular Products</h1>
                 <div className="container" style={{marginTop:'0px', minWidth:'100%'}}>
                     <div className="row" style={{margin: '0px'}}>

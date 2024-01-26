@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 import { useSelector } from 'react-redux';
 import BasketItem from '../BasketItem/BasketItem';
+import BasketProcess from '../Checkout/BasketProcess/BasketProcess';
 
 
 const Cart = () => {
@@ -14,10 +15,23 @@ const Cart = () => {
     };
 
     const basketItems = useSelector((state) => state.basket.items);
+    // Total Price
+    const [totalPrice, setTotalPrice] = useState(0)
+
+    //add to price
+    const priceAddHandler =(newPrice) => {
+        setTotalPrice(prev => prev + newPrice);
+    }
+    //remove from price
+    const priceSubHandler =(newPrice) => {
+        setTotalPrice(prev => prev - newPrice);
+    }
+
+
     return(
         <>
         <div style={{ width: '80%', margin: '50px auto'}}>
-        <h3 style={{textAlign:'left', marginLeft: '20px'}}>Your Basket</h3>
+        <h3 style={{textAlign:'left', marginLeft: '20px'}}>My Bag</h3>
             <div className="container" style={{marginTop:'0px', minWidth:'100%'}}>
                 <div style={containerStyles}>
                     <div style={{ padding: '16px' }}>
@@ -28,8 +42,14 @@ const Cart = () => {
                                     <ul>
                                         {
                                         basketItems.map((item, index) => {
-                                            console.log(item)
-                                            return <BasketItem key={index} item={item.item} size={item.size} color={item.color}/>
+                                            return <BasketItem 
+                                            key={index} 
+                                            item={item.item} 
+                                            size={item.size} 
+                                            color={item.color} 
+                                            total={totalPrice}
+                                            priceAddHandler={priceAddHandler}
+                                            priceSubHandler={priceSubHandler}/>
                                         })
                                         }
                         
@@ -37,8 +57,9 @@ const Cart = () => {
                                 )}
                         </div>
                     </div>
-                    <div style={{ border: '1px solid #ccc', padding: '16px' }}>
-
+                    {/* Right Side */}
+                    <div style={{ border: '1px solid #c4c4c4', minHeight: '400px', borderRadius:'5px'}}>
+                        <BasketProcess total={totalPrice} />
                     </div>
                 </div>
 

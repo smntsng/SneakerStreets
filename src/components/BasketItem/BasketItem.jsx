@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import sneakers from '../../assets/json/sneakers';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromBasket } from '../../redux/actions/basketActions';
@@ -18,9 +18,28 @@ const BasketItem = (props) => {
         dispatch(removeFromBasket(itemId, size, color));
     };
 
-    const amountHandler = () => {
+    const [total, setTotal] = useState(0);
+    // update total on load
+    useEffect(()=>{
+        props.priceAddHandler(total);
+    }, [total])
+
+    //update total on amount change
+    useEffect(()=>{
+        setTotal(product[0].price * amount)
+    }, [])
+
+    const amountHandlerSub = () => {
         setAmount((prev) => prev - 1)
-        if (amount === 1) {handleRemoveFromBasket(props.item, props.color, props.size)}
+        props.priceSubHandler(product[0].price)
+
+        if (amount === 1) {
+            handleRemoveFromBasket(props.item, props.color, props.size)
+        }
+    }
+    const amountHandlerAdd = () => {
+        setAmount((prev) => prev + 1)
+        props.priceAddHandler(product[0].price)
     }
     
     let customURL = "/productpage/"+props.item;
@@ -48,7 +67,7 @@ const BasketItem = (props) => {
                             </div>
                             <div className="price text-success" style={{position:'absolute', right:'20px', bottom:'20px'}}>
                                 <h5 className="mt-4" style={{color:'black', fontSize:'14px'}}>
-                                    £{product[0].price * amount}
+                                    £{(product[0].price * amount).toFixed(2)}
                                 </h5>
                             </div>
                             <p style={{fontSize: '9px !important'}}>Colour: {props.color} | Size: {props.size}</p>
@@ -59,14 +78,14 @@ const BasketItem = (props) => {
                             <div className="flex flex-row items-center">
                                 <button
                                     className="upDown bg-gray-200 py-2 px-4 rounded-md text-violet-800 text-1"
-                                    onClick={amountHandler}
+                                    onClick={amountHandlerSub}
                                     >
                                         -
                                     </button>
                                 <span className="py-4 px-6 rounded-lg">{amount}</span>
                                     <button
                                         className="upDown bg-gray-200 py-2 px-4 rounded-md text-violet-800 text-1"
-                                        onClick={() => setAmount((prev) => prev + 1)}
+                                        onClick={amountHandlerAdd}
                                     >
                                     +
                                 </button>
