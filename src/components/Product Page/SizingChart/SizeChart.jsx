@@ -1,20 +1,27 @@
 import React from "react";
 
 const SizingChart = (props) => {
-  const handleSizeClick = (size) => {
-      console.log(`Size ${size} clicked`);
-  };
-
   const sizes = props.size; 
+  
 
   return (
     <div className="sizing-chart">
       <h3 className="pb-3 text-start">Sizing Chart</h3>
       <div className="size-buttons ">
         {sizes.map((size) => (
+          size === props.chosen ?
           <button
             key={size}
-            onClick={() => handleSizeClick(size)}
+            onClick={() => props.handleSizeClick(size)}
+            className="size-button"
+            style={{background:'#7C3AED', color:'white'}}
+          >
+            {size}
+          </button>
+          :
+          <button
+            key={size}
+            onClick={() => props.handleSizeClick(size)}
             className="size-button"
           >
             {size}

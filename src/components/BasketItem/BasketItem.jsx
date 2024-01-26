@@ -53,7 +53,7 @@ const BasketItem = (props) => {
                                     +
                                 </button>
                             </div>
-                            <button className="blkButton bg-gray-800 text-white py-2 px-4 rounded-md">
+                            <button className="text-black py-2 px-2 rounded-md" style={{background: 'transparent !important', textDecoration: 'underline'}}>
                             Remove
                             </button>
                     </div>
