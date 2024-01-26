@@ -56,9 +56,15 @@ ul li {
   padding-top: 4rem;
 }
 
+.socialIcon {
+  font-size: 28px; 
+  transition: transform 0.3s ease; 
+}
+
 .socialIcon:hover {
 color: #593598;
 cursor: pointer;
+transform: scale(0.8); 
 }
 
 .signup-form {

@@ -13,7 +13,7 @@ const SizingChart = (props) => {
           <button
             key={size}
             onClick={() => props.handleSizeClick(size)}
-            className="size-button"
+            className="hovButton size-button"
             style={{background:'#7C3AED', color:'white'}}
           >
             {size}
@@ -22,7 +22,7 @@ const SizingChart = (props) => {
           <button
             key={size}
             onClick={() => props.handleSizeClick(size)}
-            className="size-button"
+            className="hovButton size-button"
           >
             {size}
           </button>

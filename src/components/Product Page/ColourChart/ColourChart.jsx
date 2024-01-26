@@ -12,7 +12,7 @@ const ColourChart = (props) => {
             <button
                 key={color}
                 onClick={() => props.handleSizeClick(color)}
-                className="size-button"
+                className="hovButton size-button"
                 style={{background:'#7C3AED', color:'white'}}
             >
                 {color}
@@ -21,7 +21,7 @@ const ColourChart = (props) => {
             <button
                 key={index}
                 onClick={() => props.handleColorClick(color)}
-                className="size-button"
+                className="hovButton size-button"
             >
                 {color}
             </button>

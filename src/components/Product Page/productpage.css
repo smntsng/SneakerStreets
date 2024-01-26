@@ -28,12 +28,14 @@ button {
   transition: all .3s ease !important;
   }
 
-button:hover { 
+.hovButton:hover { 
   background-color: #593598 !important;
   transform: scale(0.95) !important;
 }
 
-
+.brand {
+  margin-bottom: -10px;
+}
 
 /* ================= SIZING TABLE ================ */
 

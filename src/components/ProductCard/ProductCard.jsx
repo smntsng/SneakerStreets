@@ -98,7 +98,7 @@ const ProductCard = props => {
                                         })}
                                     </select>
                                     <button onClick={() => handleAddToBasket(productid,1, size, color)} 
-                                    className="btn cartBtn mt-3 bg-violet-600"
+                                    className="hovButton btn cartBtn mt-3 bg-violet-600"
                                     disabled={!size || !color}>
                                         <FontAwesomeIcon icon={faCartPlus} />
                                     </button>

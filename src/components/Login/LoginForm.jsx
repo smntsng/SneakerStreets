@@ -21,7 +21,7 @@ const LoginForm = () => {
                             <label htmlFor="exampleInputPassword1">Password</label>
                             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                         </div>
-                        <button type="submit" className="btn btn-primary" id="loginBtn">Login</button>
+                        <button type="submit" className="hovButton btn btn-primary" id="loginBtn">Login</button>
                             <div className= "signupAction m-3">
                                 <Link to="/registration"> Don't have an account? <strong className=" text-violet-700">Click here to sign up!</strong></Link>
                             </div>
