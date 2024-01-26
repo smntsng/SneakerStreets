@@ -40,6 +40,7 @@
   background-color: rgb(238, 236, 236);
   border-style: solid;
   border-radius: 0.5rem;
+  color: black;
 }
 
 .card-btn:hover {
