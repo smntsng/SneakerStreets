@@ -111,7 +111,9 @@ const ProductPage = () => {
             <div className="flex flex-row items-center">
               <button
                 className="upDown bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
-                onClick={() => setAmount((prev) => prev - 1)}
+                onClick={() => {
+                  if (amount === 1) {return}
+                  setAmount((prev) => prev - 1)}}
               >
                 -
               </button>

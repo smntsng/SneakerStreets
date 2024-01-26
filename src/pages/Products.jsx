@@ -5,7 +5,7 @@ const Products = () => {
     
     return(
         <>
-            <div style={{ width: '80%', margin: '50px auto'}}>
+            <div style={{ width: '80%', margin: '100px auto'}}>
                 <h3 style={{textAlign:'left', marginLeft: '5%'}}>Products</h3>
                 <div className="container-fluid">
                     <div className="row">

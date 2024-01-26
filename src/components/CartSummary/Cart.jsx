@@ -2,6 +2,7 @@ import React from 'react';
 import './Cart.css';
 import { useSelector } from 'react-redux';
 import BasketItem from '../BasketItem/BasketItem';
+import BasketProcess from '../Checkout/BasketProcess/BasketProcess';
 
 
 const Cart = () => {
@@ -17,7 +18,7 @@ const Cart = () => {
     return(
         <>
         <div style={{ width: '80%', margin: '50px auto'}}>
-        <h3 style={{textAlign:'left', marginLeft: '20px'}}>Your Basket</h3>
+        <h3 style={{textAlign:'left', marginLeft: '20px'}}>My Bag</h3>
             <div className="container" style={{marginTop:'0px', minWidth:'100%'}}>
                 <div style={containerStyles}>
                     <div style={{ padding: '16px' }}>
@@ -37,8 +38,9 @@ const Cart = () => {
                                 )}
                         </div>
                     </div>
-                    <div style={{ border: '1px solid #ccc', padding: '16px' }}>
-
+                    {/* Right Side */}
+                    <div style={{ border: '1px solid #c4c4c4', minHeight: '400px', borderRadius:'5px'}}>
+                        <BasketProcess />
                     </div>
                 </div>
 

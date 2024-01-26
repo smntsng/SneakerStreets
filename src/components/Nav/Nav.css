@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     background-color: #ffffff;
 }
 
@@ -41,14 +40,19 @@
 
 
 .header {
-    margin: 0px 10% 0% 10%;
-    border-radius: 0px 0px 25px 25px;
-    border: 1px solid hsl(80, 7%, 92%);
-    padding: 0px 25px 10px 25px ;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
-}
+        width: 80%;
+        z-index: 1000;
+        position: fixed;
+        background: white;
+        margin: 0px auto;
+        /* margin-bottom: 50px; */
+        top: 0;
+        left: 10%;
+        border-radius: 0px 0px 16px 16px;
+        border: 1px solid hsl(80, 7%, 92%);
+        padding: 0px 10px 5px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 
 .header-bottom-row {
     display: flex;
@@ -65,7 +69,7 @@ padding-top: 5px;
 
 .header-nav-icons {
     display: flex;
-    gap: 16px;
+    gap: 5px;
     align-items: center;
 }
 
@@ -85,11 +89,11 @@ padding-top: 5px;
 }
 .burgermenu{
     margin:1%;
+    position: relative;
+    right: -150px;
 }
 
-.header-nav-icons{
-    margin:0% 5% 0% 5% ;
-}
+
 
 @media (max-width: 600px) {
     .header {

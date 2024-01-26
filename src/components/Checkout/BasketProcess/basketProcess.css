@@ -1,0 +1,102 @@
+.notice{
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+    text-align: center;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+}
+.notice p {
+    font-size: 11px !important;
+}
+.bold{
+    font-weight: 600;
+    font-size: 12px !important;
+}
+.delivery{
+    position: relative;
+}
+.tick{
+    position: absolute;
+    right: 50px;
+    top:5px;
+    color: white;
+    font-size: 22px !important;
+}
+/* Accordin */
+.accordionHeading {
+    font-size: 14px !important;
+    padding-top: 14px;
+    height: 50px;
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: inherit;
+}
+
+button.accordion-button:focus{
+    box-shadow: inherit;
+}
+.accordionItem button{
+    height: 50px;
+}
+.accordionBody p{
+    font-size: 12px !important;
+}
+
+.accordion-button::selection{
+    outline: none;
+}
+
+/* Payment Process */
+.totalPriceSection{
+    padding: 10px 20px;
+    text-align: left;
+}
+.totalPriceSection p{
+    padding: 10px;
+}
+
+/* checkout option */
+
+.checkoutOptions p{
+    font-size: 12px !important;
+    padding: 10px 0px;
+}
+.checkoutOptions img{
+    height: 24px ;
+    margin: 0px auto;
+}
+.paymenyIn{
+    padding: 5px;
+    height: 30px !important;
+    display: inline;
+}
+.paymenyIcon{
+    padding: 5px;
+    height: 30px !important;
+}
+.checkoutOptions h4{
+    padding: 10px;
+}
+.checkoutOptions button{
+    width: 90%;
+}
+
+.extraPaymentButton{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 5px auto;
+    justify-content: center;
+    position: relative;
+    color: black;
+    height: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
+.extraPaymentButton img{
+    width: 100px;
+    position: absolute;
+    right: 25px;
+}

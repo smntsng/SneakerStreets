@@ -10,7 +10,7 @@ import Login from './pages/Login'
 import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader';
 import Checkout from './pages/Checkout';
-import ContactUs from './components/ContactUs/ContactUs'
+import Contact from './pages/Contact'
 import ScrollToTop from "react-scroll-to-top";
 import Registration from './pages/Registration';
 import Popular from './pages/Popular';
@@ -44,7 +44,7 @@ function App() {
             <Route path="/login" element={<Login />} />      
             <Route path="/productpage/:id" element={<ProductPage />} />
             <Route path="/Checkout" element={<Checkout />} />
-            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/contactus" element={<Contact />} />
             <Route path="/registration" element={<Registration />} />
             {/*  */}
             <Route path="/popular" element={ <Popular /> } />
