@@ -7,18 +7,12 @@
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  display: flex;
   justify-content: center;
-  padding: .5%;
+  padding: 1.5%;
+  gap: 1.5rem;
 }
 
-/* .card {
-  overflow: hidden;
-  box-shadow: 0 2px 20px 0px;
-  border-radius: 2rem; 
-} */
 
 .card-container {
   overflow: hidden;
@@ -40,6 +34,7 @@
   background-color: rgb(238, 236, 236);
   border-style: solid;
   border-radius: 0.5rem;
+  
 }
 
 .card-btn:hover {

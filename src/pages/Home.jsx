@@ -37,9 +37,9 @@ const Home = () => {
                     <h3 style={{marginTop: '30px'}} className= "categories-header">CATEGORIES</h3>
                 </div>
                 <div className= "wrapper">
-                    <CategoryCard category="Men" img= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRsTvA_0zzi0UNvSxAE9CSObi90WXY4cIzDQ&usqp=CAU" description= "Find the latest trends for Men here!"/>
-                    <CategoryCard category="Women" img= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjiAQL7vR2e7dx6OGjqogArFyPwyUJWezcXg&usqp=CAU" description= "Find the latest trends for Women here!"/>
-                    <CategoryCard category="Kids" img= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUxk40lziGTex3LPmjxiuiaqriUSVwffrqOA&usqp=CAU" description= "Find the latest trends for Kids here!"/>
+                    <CategoryCard category="Men" img= "src/assets/images/mensAd3.png" description= "Find the latest trends for Men here!"/>
+                    <CategoryCard category="Women" img= "src/assets/images/womensAd3.png" description= "Find the latest trends for Women here!"/>
+                    <CategoryCard category="Kids" img= "src/assets/images/kidsAd3.png" description= "Find the latest trends for Kids here!"/>
                 </div>
                 
                 <h4 className='containerHeading mt-5'>Classics</h4>
