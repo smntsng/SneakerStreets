@@ -24,7 +24,7 @@ const Navigation = () => {
                             src={logo}
                             width="200"
                             height="auto"
-                            className="d-inline-block align-top"
+                            className="d-inline-block align-top logo"
                             alt="React Bootstrap logo"
                         />
                     </Navbar.Brand>
