@@ -47,7 +47,7 @@ const ContactUs = () => {
               placeholder="Your Message"
             />
           </div>
-          <button type="submit" className="btn btn-primary m-3" id="loginBtn">
+          <button type="submit" className="hovButton btn btn-primary m-3" id="loginBtn">
             Submit
           </button>
         </form>

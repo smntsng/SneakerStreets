@@ -90,7 +90,7 @@ const ProductPage = () => {
         {/* {ABOUT} */}
         <div className="flex flex-col gap-6 lg:w-2/3">
           <div>
-            <h2 className=" text-violet-600 font-medium text-start">
+            <h2 className="brand text-violet-600 font-medium text-start ">
               {brand}
             </h2>
             <h1 className="text-start">{title}</h1>
@@ -110,14 +110,14 @@ const ProductPage = () => {
           <div className="flex flex-row items-center gap-12 mt-3">
             <div className="flex flex-row items-center">
               <button
-                className="upDown bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
+                className="hovButton upDown bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
                 onClick={() => setAmount((prev) => prev - 1)}
               >
                 -
               </button>
               <span className="py-4 px-6 rounded-lg">{amount}</span>
               <button
-                className="upDown bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
+                className="hovButton upDown bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
                 onClick={() => setAmount((prev) => prev + 1)}
               >
                 +
@@ -125,7 +125,7 @@ const ProductPage = () => {
             </div>
             <button 
             onClick={() => handleAddToBasket(id , amount , size, color)} 
-            className="btn cartBtn mt-3 bg-violet-600 py-4 px-16 rounded-xl"
+            className="hovButton btn cartBtn mt-3 bg-violet-600 py-4 px-16 rounded-xl"
             disabled={size === undefined || color === undefined} >
               Add to Cart
             </button>
