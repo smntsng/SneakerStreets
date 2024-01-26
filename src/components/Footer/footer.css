@@ -108,8 +108,8 @@ cursor: pointer;
 .footer-section-contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
 }
 
 @media screen and (max-width: 768px) {
@@ -144,4 +144,9 @@ cursor: pointer;
   .input {
     width: 100%;
   }
+}
+
+.quickNav {
+  font-size: 18px !important;
+  font-weight: 500 !important;
 }
