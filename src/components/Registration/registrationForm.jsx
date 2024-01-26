@@ -5,11 +5,11 @@ const RegisterForm = () => {
     return(
         <>
             <Container fluid className="registerContainer">
-                    <p style = {{   fontFamily: 'Monument Extended,sans-serif',
+                    <div style = {{   fontFamily: 'Monument Extended,sans-serif',
                                 textTransform: 'uppercase',
                                 fontSize: '1.4rem',
                                 letterSpacing: '.1rem'}}> <h1 className="mt-4">Register</h1>                                
-                    </p>
+                    </div>
                     <form>
                     <div className="form-group">
                             <label htmlFor="exampleInputEmail1">Full Name</label> 

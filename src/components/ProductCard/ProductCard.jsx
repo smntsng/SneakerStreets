@@ -5,8 +5,38 @@ import { Link } from 'react-router-dom'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import { faHeart, faFireFlameCurved } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { addToBasket } from '../../redux/actions/basketActions';
 
 const ProductCard = props => {
+
+    const dispatch = useDispatch();
+    
+    const basket = useSelector((state) => state.basket);
+
+    // Use state
+    const [size, setSize] = useState(undefined);
+    const [color, setColor] = useState(undefined);
+
+    const handleAddToBasket = (item, quantity, size, color) => {
+        dispatch(addToBasket({item, quantity, size, color }));
+        setColor(undefined);
+        setSize(undefined);
+    };
+
+    // Color and Size handlers
+    const handleSizeChange = (event) => {
+        let newSize = event.target.value;
+        if(newSize === 'Size') {newSize = undefined}
+        setSize(newSize)
+    };
+
+    const handleColorChange = (event) => {
+        let newColor = event.target.value;
+        if(newColor === 'Color') {newColor = undefined}
+        setColor(newColor)
+    };
+
     // Object destructuring for props
     const { id, image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag, popularity } = props.data;
     let customURL = "/productpage/"+id;
@@ -49,23 +79,29 @@ const ProductCard = props => {
                                     </div>
                                 </div>
                                 <div className="buy d-flex justify-content-between align-items-baseline">
-                                    <select className="custom-select mr-1">
+                                    <select className="custom-select mr-1"
+                                            value={color}
+                                            onChange={handleColorChange}>
                                         <option defaultValue>Color</option>
-                                        {colourOption.map( (color, index) => {
-                                            return <option key={index} value={index}>{color}</option>
+                                        {colourOption.map( (colorNo, index) => {
+                                            return <option key={index} value={colorNo}>{colorNo} </option>
                                         })}
                                         
                                         
                                     </select>
-                                    <select className="custom-select ml-1">
+                                    <select className="custom-select ml-1"
+                                            value={size}
+                                            onChange={handleSizeChange}>
                                         <option defaultValue>Size</option>
-                                        {sizeOption.map( (size, index) => {
-                                            return <option key={index} value={index}>{size}</option>
+                                        {sizeOption.map( (sizeNo, index) => {
+                                            return <option key={index} value={sizeNo}>{sizeNo}</option>
                                         })}
                                     </select>
-                                    <a href="#" className="btn cartBtn mt-3">
+                                    <button onClick={() => handleAddToBasket(productid,1, size, color)} 
+                                    className="btn cartBtn mt-3 bg-violet-600"
+                                    disabled={!size || !color}>
                                         <FontAwesomeIcon icon={faCartPlus} />
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>

@@ -23,7 +23,7 @@ const Popular = () => {
         return b.popularity - a.popularity;
     });
 
-    console.log(popularProducts)
+    // console.log(popularProducts)
 
 
     return(

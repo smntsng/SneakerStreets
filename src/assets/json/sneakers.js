@@ -95,5 +95,5 @@ const sneakers =
         'https://cdn.media.amplience.net/i/office/4909409977_pr1.jpg?$highres$&w=1068&h=934&fmt=auto&qlt=default&fmt.jpeg'],
     }
 ]
-
+const sneakersJSON = JSON.stringify(sneakers, null, 2);
 export default sneakers;

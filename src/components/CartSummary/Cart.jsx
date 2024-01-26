@@ -1,38 +1,48 @@
 import React from 'react';
 import './Cart.css';
+import { useSelector } from 'react-redux';
+import BasketItem from '../BasketItem/BasketItem';
 
 
 const Cart = () => {
+    const containerStyles = {
+        display: 'grid',
+        gridTemplateColumns: '60% 40%',
+        gap: '16px',
+        margin: 'auto',
+        width: '100%'
+    };
+
+    const basketItems = useSelector((state) => state.basket.items);
     return(
         <>
-        <h1 className='checkout'>Checkout</h1>
+        <div style={{ width: '80%', margin: '50px auto'}}>
+        <h3 style={{textAlign:'left', marginLeft: '20px'}}>Your Basket</h3>
+            <div className="container" style={{marginTop:'0px', minWidth:'100%'}}>
+                <div style={containerStyles}>
+                    <div style={{ padding: '16px' }}>
+                        <div className="row" style={{margin: '0px'}}>
+                            {basketItems.length === 0 ? (
+                                <p>Your basket is empty</p>
+                                ) : (
+                                    <ul>
+                                        {
+                                        basketItems.map((item, index) => {
+                                            console.log(item)
+                                            return <BasketItem key={index} item={item.item} size={item.size} color={item.color}/>
+                                        })
+                                        }
+                        
+                                    </ul>
+                                )}
+                        </div>
+                    </div>
+                    <div style={{ border: '1px solid #ccc', padding: '16px' }}>
 
-        <div className='total'>
-        <h2>
-            Total: price logic
-            {/* need to add price logic here */}
-        </h2>
-        
-       
+                    </div>
+                </div>
 
-        <button className="checkoutButton"> CHECKOUT</button>
-        </div>
-    <div className='atcContainer'>
-        <div className='atcproducts'>
-        <h2>
-            Cart
-        </h2>
-
-        <div className='products'>
-            add to cart logic
-            {/* atc logic */}
-        </div>
-        </div>
-        <div className='voucher'>
-          <h2>Promo Code</h2>
-          <input className='input' type="text" id="voucherInput" placeholder="Enter code" />
-          <button className="voucherButton">APPLY</button>
-        </div>
+            </div>
         </div>
         </>
     )

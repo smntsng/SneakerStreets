@@ -5,18 +5,42 @@ import ProductCard from "../ProductCard/ProductCard";
 import Accordion from "../Accordion/Accordion";
 import sneakers from '../../assets/json/sneakers'
 import { useParams } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 import ColourChart from "./ColourChart/ColourChart";
+import { useDispatch, useSelector } from 'react-redux';
+import { addToBasket } from '../../redux/actions/basketActions';
 
 const ProductPage = () => {
+
+  const dispatch = useDispatch();
+  const basket = useSelector((state) => state.basket);
+
+  // Use state
+  const [amount, setAmount] = useState(1);
+  const [size, setSize] = useState(undefined);
+  const [color, setColor] = useState(undefined);
+
+  const handleAddToBasket = (item, quantity, size, color) => {
+      dispatch(addToBasket({item, quantity, size, color }));
+      setSize(undefined);
+      setColor(undefined);
+      setAmount(1)
+  };
+
+  // Color and Size handlers
+  const handleSizeClick = (size) => {
+    setSize(size)
+  };
+
+  const handleColorClick = (color) => {
+    setColor(color)
+  };
+
   // Get ID from URL
   const params = useParams();
 
   let product = sneakers.filter( (data) => {
     return data.id == params.id;
   })
-
 
   const { id, image, title, price, brand, styleCode, sizeOption, colourOption, category, stock, specialTag } = product[0];
   const [activeImg, setActiveImage] = useState(image[0]);
@@ -25,11 +49,6 @@ const ProductPage = () => {
     window.scrollTo(0, 0);
     setActiveImage(image[0])
   }, [params.id]);
-
-
-  const [amount, setAmount] = useState(1);
-
-
 
   return (
     <div style={{ width: '96%', margin: '0 auto', maxWidth: '1400px' }}>
@@ -83,28 +102,31 @@ const ProductPage = () => {
           </div>
           <h6 className=" text-2xl font-bold text-start">£{price}</h6>
           <div className="flex flex-row items-center">
-              <SizingChart size={sizeOption}/>
+              <SizingChart size={sizeOption} chosen={size} handleSizeClick={handleSizeClick}/>
           </div>
           <div className="flex flex-row items-center">
-              <ColourChart color={colourOption} />
+              <ColourChart color={colourOption} chosen={color} handleColorClick={handleColorClick}/>
           </div>
           <div className="flex flex-row items-center gap-12 mt-3">
             <div className="flex flex-row items-center">
               <button
                 className="upDown bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
-                onClick={() => setAmount((prev) => [prev - 1])}
+                onClick={() => setAmount((prev) => prev - 1)}
               >
                 -
               </button>
               <span className="py-4 px-6 rounded-lg">{amount}</span>
               <button
                 className="upDown bg-gray-200 py-6 px-6 rounded-lg text-violet-800 text-1xl"
-                onClick={() => setAmount((prev) => [prev + 1])}
+                onClick={() => setAmount((prev) => prev + 1)}
               >
                 +
               </button>
             </div>
-            <button className="blkButton bg-violet-600  text-white py-4 px-16 rounded-xl h-full">
+            <button 
+            onClick={() => handleAddToBasket(id , amount , size, color)} 
+            className="btn cartBtn mt-3 bg-violet-600 py-4 px-16 rounded-xl"
+            disabled={size === undefined || color === undefined} >
               Add to Cart
             </button>
           </div>
