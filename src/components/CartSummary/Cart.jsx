@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 import { useSelector } from 'react-redux';
 import BasketItem from '../BasketItem/BasketItem';
@@ -16,6 +16,11 @@ const Cart = () => {
 
     const basketItems = useSelector((state) => state.basket.items);
     // Total Price
+    const [totalPrice, setTotalPrice] = useState(0)
+
+    const priceupdateHandler =(newPrice) => {
+        setTotalPrice(newPrice);
+    }
 
     return(
         <>
@@ -32,7 +37,12 @@ const Cart = () => {
                                         {
                                         basketItems.map((item, index) => {
                                             console.log(item)
-                                            return <BasketItem key={index} item={item.item} size={item.size} color={item.color}/>
+                                            return <BasketItem 
+                                            key={index} 
+                                            item={item.item} 
+                                            size={item.size} 
+                                            color={item.color} 
+                                            priceupdateHandler={priceupdateHandler}/>
                                         })
                                         }
                         
@@ -42,7 +52,7 @@ const Cart = () => {
                     </div>
                     {/* Right Side */}
                     <div style={{ border: '1px solid #c4c4c4', minHeight: '400px', borderRadius:'5px'}}>
-                        <BasketProcess />
+                        <BasketProcess total={totalPrice} priceupdateHandler={priceupdateHandler}/>
                     </div>
                 </div>
 

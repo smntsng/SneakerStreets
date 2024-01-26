@@ -1,12 +1,13 @@
 import { Button } from "react-bootstrap";
 
-const PaymentProcess =() => {
+const PaymentProcess = props => {
     return(
         <>
             <div className="totalPriceSection">
-                <p> Basket Total: </p>
+                <p> Basket Total: <span>£{props.total}</span></p>
                 <hr />
-                <p><strong>Total: </strong></p>
+
+                <p><strong>Total: </strong> <span>£{props.total}</span></p>
                 <hr/>
             </div>
             <div className="checkoutOptions">

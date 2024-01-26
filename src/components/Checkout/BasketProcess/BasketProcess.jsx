@@ -18,7 +18,7 @@ const BasketProcess = props => {
             </div>
         </div>
         <DeliveryAccordion />
-        <PaymentProcess />
+        <PaymentProcess total = {props.total} priceUpdateHandler={props.priceUpdateHandler}/>
         <PromoAccordion />
         </>
     )
