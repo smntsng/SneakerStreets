@@ -5,11 +5,12 @@ const LoginForm = () => {
     return(
         <>
             <Container fluid className="loginContainer">
-                    <p style = {{   fontFamily: 'Monument Extended,sans-serif',
+                    <div style = {{   fontFamily: 'Monument Extended,sans-serif',
                                 textTransform: 'uppercase',
                                 fontSize: '1.4rem',
-                                letterSpacing: '.1rem'}}> <h1 className="mt-4">Login</h1>
-                    </p>
+                                letterSpacing: '.1rem'}}> 
+                                <h1 className="mt-4">Login</h1>
+                    </div>
                     <form>
                         <div className="form-group">
                             <label htmlFor="exampleInputEmail1">Email address</label>
@@ -22,7 +23,7 @@ const LoginForm = () => {
                         </div>
                         <button type="submit" className="btn btn-primary" id="loginBtn">Login</button>
                             <div className= "signupAction m-3">
-                                <Link to="/registration"> Don't have an account? <strong className=" text-violet-700">Click here to sign up</strong></Link>
+                                <Link to="/registration"> Don't have an account? <strong className=" text-violet-700">Click here to sign up!</strong></Link>
                             </div>
                     </form>
                 </Container>
