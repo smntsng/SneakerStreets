@@ -25,14 +25,17 @@ p {
 
 button { 
   font-size: 17px !important;
+  transition: all .3s ease !important;
   }
 
-.blkButton:hover { 
+.hovButton:hover { 
   background-color: #593598 !important;
-  
+  transform: scale(0.95) !important;
 }
 
-
+.brand {
+  margin-bottom: -10px;
+}
 
 /* ================= SIZING TABLE ================ */
 
@@ -45,6 +48,7 @@ button {
   display: flex;
   gap: 8px;
   
+  
 }
 
 .size-button {
@@ -53,12 +57,13 @@ button {
   border: 1px solid #ddd;
   cursor: pointer;
   border-radius: 10px;
-  
+ 
 }
 
 .size-button:hover {
     color: #ffffff;
     background-color: #593598;
+    
 }
 
 

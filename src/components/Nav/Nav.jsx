@@ -40,11 +40,11 @@ const Navigation = () => {
                         </Nav>
                     </Navbar.Collapse>
                     <div className="header-nav-icons">
-                    <NavLink to="/login" className="nav-link">
+                    <NavLink to="/login" className="nav-link icon">
                             <FaUser />
                         </NavLink>
 
-                        <NavLink to="/Checkout" className="nav-link">
+                        <NavLink to="/Checkout" className="nav-link icon">
                             <FaShoppingCart />
                         </NavLink>
                     </div>

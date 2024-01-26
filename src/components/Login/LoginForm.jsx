@@ -20,6 +20,7 @@ const LoginForm = () => {
     };
     return (
         <>
+
           <Container fluid className="loginContainer">
             <div style={{ fontFamily: 'Monument Extended, sans-serif', textTransform: 'uppercase', fontSize: '1.4rem', letterSpacing: '.1rem' }}>
               <h1 className="mt-4">Login</h1>
@@ -57,6 +58,7 @@ const LoginForm = () => {
               </div>
             </form>
           </Container>
+
         </>
       );
     };
