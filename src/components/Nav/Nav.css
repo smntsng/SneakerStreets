@@ -11,6 +11,7 @@
     display: flex;
     gap: 25px;
     margin-bottom: 0 !important;
+    margin-right: 30px
 }
 
 .nav-links li {
@@ -23,6 +24,7 @@
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 0 !important;
+    margin-right: 30px;
 }
 
 .nav-link:hover {
@@ -74,4 +76,32 @@ padding-top: 5px;
 .header-nav-icons p {
     margin-bottom: 0 !important;
     
+}
+
+.navItems{
+    
+    width: 100%;
+    
+}
+.burgermenu{
+    margin:1%;
+}
+
+.header-nav-icons{
+    margin:0% 5% 0% 5% ;
+}
+
+@media (max-width: 600px) {
+    .header {
+        margin: 0px 2% 0% 2%;
+        
+        padding: 0px 10px 10px 10px ;
+    
+    }
+    .header-nav-icons{
+        margin:0% 5% 0% 20% ;
+
+    }
+
+
 }
