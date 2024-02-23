@@ -51,7 +51,7 @@ const ProductPage = () => {
   }, [params.id]);
 
   return (
-    <div style={{ width: '96%', margin: '0 auto', maxWidth: '1400px' }}>
+    <div style={{ width: '96%', margin: '50px auto', maxWidth: '1400px' }}>
       <div className="flex flex-col  lg:flex-row rounded-xl p-5 gap-16 lg:items-start" >
         <div className="flex flex-col gap-6 lg:w-2/3">
           <img
